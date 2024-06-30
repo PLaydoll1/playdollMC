@@ -1,0 +1,82 @@
+Plugin:
+  Updates: true
+  Metrics: true
+Event:
+  Join:
+    Enable: true
+    Message: ''
+  Quit:
+    Enable: true
+    Message: ''
+  Whitelist:
+    Enable: true
+    Message: '&a&l(!) &7El servidor esta en &c&lmantenimiento &7para hacer mejoras
+      mas informacion en twitter &bASTROGamingNT&7.'
+  ServerFull:
+    Enable: true
+    Message: '&a&l(!) &7El servidor esta &clleno &epara poder entrar igualmente compra
+      &a&lVIP &een nuestra tienda oficial.'
+Server:
+  Motd:
+    Enable: false
+    Messages:
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+Command:
+  Say:
+    Enable: true
+    Message: '&c&lAlert! &f&l%Message'
+  Me:
+    Enable: true
+    Message: '&e* %Player &7%Message'
+  Plugins:
+    Enable: true
+    Message: '&c&lERROR &8Â» &7No rank.'
+  Version:
+    Enable: true
+    Message: '&c&lERROR &8Â» &7No rank.'
+  Seed:
+    Enable: true
+    Message: '&c&lERROR &8Â» &7No rank.'
+DeathMessages:
+  Enable: false
+  Messages:
+    Drowned: '&e%Player &fSe ahogo'
+    FallDamage: '&e%Player &fCayo desde muy alto'
+    Void: '&e%Player &fCayo al vacio'
+    Lava: '&e%Player &fTrato de nadar en la lava'
+    Fire: '&e%Player &fArdio en llamas'
+    Explosion: '&e%Player &fExploto'
+    Magic: '&e%Player &fFue asesinado por la magia'
+    Suffocated: '&e%Player &fSe asfixiado en una pared'
+    Projectile: '&e%Player &fFue pinchado asta la muerte'
+    Starved: '&e%Player &fMurio de hambre'
+    Withered: '&e%Player &fSe ha marchitado'
+    Died: '&e%Player &fMurio'
+    Player: '&e%Killer &fha asesinado a &e%Killed'
+    Slain:
+      Pigman: '&e%Player &fFue asesinado por Zombie Pigman'
+      Zombie: '&e%Player &fFue asesinado por Zombie'
+      Spider: '&e%Player &fFue asesinado por Spider'
+      Silverfish: '&e%Player &fFue asesinado por Silverfish'
+      Slime: '&e%Player &fFue asesinado por Slime'
+      Creeper: '&e%Player &fFue explotado por un Creeper'
+      MagmaCube: '&e%Player &fFue asesinado por Magma Cube'
+      Enderman: '&e%Player &fFue asesinado por Enderman'
+      EnderDragon: '&e%Player &fFue asesinado por EnderDragon'
+      CaveSpider: '&e%Player &fFue asesinado por CaveSpider'
+      IronGolem: '&e%Player &fFue asesinado por IronGolem'
+      Wolf: '&e%Player &fFue asesinado por Wolf'
+      Giant: '&e%Player &fFue asesinado por Giant'
+      Wither: '&e%Player &fFue asesinado por Wither'
+      Skeleton: '&e%Player &fFue asesinado por Skeleton'
+      Blaze: '&e%Player &fFue disparado por un Blaze'
+      Ghast: '&e%Player &fFue disparado por un Ghast'
+      Witch: '&e%Player &fFue asesinado por Bruja'
+      WitherSkeleton: '&e%Player &fFue asesinado por WitherSkeleton'

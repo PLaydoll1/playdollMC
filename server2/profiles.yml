@@ -1,0 +1,1715 @@
+# This is the configuration file for all the knockback profiles, in here you can
+# easily setup profiles, change knockback values, and change default knockback
+# or create knockback profiles manually. Be careful while editing these manually
+# though, because this configuration can easily break!
+# 
+
+DEFAULT-KNOCKBACK: DEFAULT
+PROFILES:
+  DEFAULT:
+    TYPE: EASY
+    # Horizontal Multiplier
+    HORIZONTAL: 0.4
+    # Vertical Value
+    VERTICAL: 0.4
+    # Add a certain value to horizontal/vertical before actual calculations
+    EXTRA-HORIZONTAL: 0.5
+    EXTRA-VERTICAL: 0.1
+    # Friction Value (Knockback is divided by this)
+    FRICTION: 2.0
+    # Y-Axis Limit for a player's velocity
+    Y-LIMIT: 0.4000000059604645
+    DAMAGE-TICKS:
+      # Override vanilla damage ticks with carbon's
+      OVERRIDE: true
+      # The delay between a player's ability to damage an entity
+      VALUE: 20
+      # Disables damage ticks for rods and arrows
+      BETTER-DETECTION: false
+    PROJECTILES:
+      ARROW:
+        # Override vanilla arrow knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by an Arrow
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by an Arrow
+        VERTICAL: 0.4
+        # Toggle whether an arrow moves you in a straight line
+        STRAIGHT-BOOST: false
+      FISH-ROD:
+        # Override vanilla rod knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Fish-Rod
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Fish-Rod
+        VERTICAL: 0.4
+        # Multiplies the amount given with the rod's vector magnitude (Faster/Smoother Rodding)
+        SPEED: 2.2
+      PEARL:
+        # Override vanilla pearl knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Pearl
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Pearl
+        VERTICAL: 0.4
+      EXPLODE:
+        # Override vanilla explosion knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Explosion
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Explosion
+        VERTICAL: 0.4
+        # Toggle whether an explosion moves you in a straight line
+        STRAIGHT-BOOST: false
+      SNOW-BALL:
+        # Override vanilla snowball knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Snowball
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Snowball
+        VERTICAL: 0.4
+      EGG:
+        # Override vanilla egg knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Egg
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Egg
+        VERTICAL: 0.4
+      POTION:
+        # Override settings.yml potion settings with this
+        OVERRIDE: false
+        # Splash potion's falling speed
+        SPEED: 0.593
+        # Splash potion's negative y-velocity
+        GRAVITY: 0.05
+        # Splash potion's vertical offset
+        VERTICAL-OFFSET: -20.0
+        # Splash potion's horizontal offset
+        HORIZONTAL-OFFSET: 0.0
+      Y-LIMIT:
+        # Should we limit projectile's vertical kb?
+        ENABLED: true
+        # Vertical limit value of projectiles
+        VALUE: 0.4000000059604645
+    # Should the vertical velocity be set to 0 after reaching limit?
+    DYNAMIC-LIMIT: false
+    # Should we limit horizontal movement?
+    LIMIT-HORIZONTAL: false
+    # X/Z-Axis Limit for a player's velocity
+    H-LIMIT: 0.45
+    # Should we use 1.7 Knockback?
+    ONE-POINT-SEVEN: false
+  COMBO:
+    TYPE: EASY
+    # Horizontal Multiplier
+    HORIZONTAL: 0.27
+    # Vertical Value
+    VERTICAL: 0.4
+    # Add a certain value to horizontal before actual calculations
+    INHERIT-H-ENABLED: true
+    INHERIT-H-VALUE: 1.0
+    # Add a certain value to vertical before actual calculations
+    INHERIT-V-ENABLED: false
+    INHERIT-V-VALUE: 1.0
+    # Friction values, actual knockback is divided by this
+    FRICTION-H: 2.0
+    FRICTION-V: 2.0
+    # When player is hit but on ground, this value is multiplied with initial kb
+    GROUND-H: 1.023
+    GROUND-V: 1.023
+    # When player is hit but attacker is spriting, this value is multiplied with initial kb
+    SPRINT-H: 1.3
+    SPRINT-V: 1.0
+    # Y-Axis Limit for a player's velocity
+    Y-LIMIT: 0.23333333333333
+    # Dynamic vertical axis limit value
+    Y-LIMIT-VALUE: 1.4
+    # Should the attacker have their sprint reset upon attacking
+    STOP-SPRINT: false
+    # This value is multiplied in horizontal axis after calculations and sprint reset
+    SLOWDOWN: 1.0
+    COMBO:
+      # Toggle combo mode
+      ENABLED: true
+      # This is used to track when to move player back down from y axis
+      TICKS: 10
+      # Horizontal velocity of a player in combo mode
+      VELOCITY: -0.15
+      # Vertical velocity of a player in combo mode
+      HEIGHT: 2.201
+    DAMAGE-TICKS:
+      # Override vanilla damage ticks with carbon's
+      OVERRIDE: true
+      # The delay between a player's ability to damage an entity
+      VALUE: 0
+      # Disables damage ticks for rods and arrows
+      BETTER-DETECTION: true
+    PROJECTILES:
+      ARROW:
+        # Override vanilla arrow knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by an Arrow
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by an Arrow
+        VERTICAL: 0.4
+        # Toggle whether an arrow moves you in a straight line
+        STRAIGHT-BOOST: false
+      FISH-ROD:
+        # Override vanilla rod knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Fish-Rod
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Fish-Rod
+        VERTICAL: 0.4
+        # Multiplies the amount given with the rod's vector magnitude (Faster/Smoother Rodding)
+        SPEED: 2.2
+      PEARL:
+        # Override vanilla pearl knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Pearl
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Pearl
+        VERTICAL: 0.4
+      EXPLODE:
+        # Override vanilla explosion knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Explosion
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Explosion
+        VERTICAL: 0.4
+        # Toggle whether an explosion moves you in a straight line
+        STRAIGHT-BOOST: false
+      SNOW-BALL:
+        # Override vanilla snowball knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Snowball
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Snowball
+        VERTICAL: 0.4
+      EGG:
+        # Override vanilla egg knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Egg
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Egg
+        VERTICAL: 0.4
+      POTION:
+        # Override settings.yml potion settings with this
+        OVERRIDE: false
+        # Splash potion's falling speed
+        SPEED: 0.593
+        # Splash potion's negative y-velocity
+        GRAVITY: 0.05
+        # Splash potion's vertical offset
+        VERTICAL-OFFSET: -20.0
+        # Splash potion's horizontal offset
+        HORIZONTAL-OFFSET: 0.0
+      Y-LIMIT:
+        # Should we limit projectile's vertical kb?
+        ENABLED: true
+        # Vertical limit value of projectiles
+        VALUE: 0.4000000059604645
+    # Should we use 1.7 Knockback?
+    ONE-POINT-SEVEN: false
+    # Add a certain value to horizontal/vertical before actual calculations
+    EXTRA-HORIZONTAL: 0.46
+    EXTRA-VERTICAL: 0.1
+    # Friction Value (Knockback is divided by this)
+    FRICTION: 2.0
+    # Should the vertical velocity be set to 0 after reaching limit?
+    DYNAMIC-LIMIT: false
+    # Should we limit horizontal movement?
+    LIMIT-HORIZONTAL: false
+    # X/Z-Axis Limit for a player's velocity
+    H-LIMIT: 0.2
+  BOXING:
+    TYPE: DETAILED
+    # Horizontal Multiplier
+    HORIZONTAL: 0.55
+    # Vertical Value
+    VERTICAL: 0.35
+    # Add a certain value to horizontal before actual calculations
+    INHERIT-H-ENABLED: true
+    INHERIT-H-VALUE: 1.1
+    # Add a certain value to vertical before actual calculations
+    INHERIT-V-ENABLED: false
+    INHERIT-V-VALUE: 1.0
+    # Friction values, actual knockback is divided by this
+    FRICTION-H: 2.0
+    FRICTION-V: 2.0
+    # When player is hit but on ground, this value is multiplied with initial kb
+    GROUND-H: 1.1
+    GROUND-V: 1.0
+    # When player is hit but attacker is spriting, this value is multiplied with initial kb
+    SPRINT-H: 1.3
+    SPRINT-V: 1.0
+    # Should we dynamically limit player's vertical axis?
+    Y-LIMIT: true
+    # Dynamic vertical axis limit value
+    Y-LIMIT-VALUE: 1.2
+    # Should the attacker have their sprint reset upon attacking
+    STOP-SPRINT: true
+    # This value is multiplied in horizontal axis after calculations and sprint reset
+    SLOWDOWN: 0.1
+    COMBO:
+      # Toggle combo mode
+      ENABLED: false
+      # This is used to track when to move player back down from y axis
+      TICKS: 10
+      # Horizontal velocity of a player in combo mode
+      VELOCITY: -0.05
+      # Vertical velocity of a player in combo mode
+      HEIGHT: 2.5
+    DAMAGE-TICKS:
+      # Override vanilla damage ticks with carbon's
+      OVERRIDE: true
+      # The delay between a player's ability to damage an entity
+      VALUE: 20
+      # Disables damage ticks for rods and arrows
+      BETTER-DETECTION: false
+    PROJECTILES:
+      Y-LIMIT:
+        # Should we limit projectile's vertical kb?
+        ENABLED: true
+        # Vertical limit value of projectiles
+        VALUE: 0.4000000059604645
+      ARROW:
+        # Override vanilla arrow knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by an Arrow
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by an Arrow
+        VERTICAL: 0.4
+        # Toggle whether an arrow moves you in a straight line
+        STRAIGHT-BOOST: false
+      FISH-ROD:
+        # Override vanilla rod knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Fish-Rod
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Fish-Rod
+        VERTICAL: 0.4
+        # Multiplies the amount given with the rod's vector magnitude (Faster/Smoother Rodding)
+        SPEED: 2.2
+      PEARL:
+        # Override vanilla pearl knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Pearl
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Pearl
+        VERTICAL: 0.4
+      EXPLODE:
+        # Override vanilla explosion knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Explosion
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Explosion
+        VERTICAL: 0.4
+        # Toggle whether an explosion moves you in a straight line
+        STRAIGHT-BOOST: false
+      SNOW-BALL:
+        # Override vanilla snowball knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Snowball
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Snowball
+        VERTICAL: 0.4
+      EGG:
+        # Override vanilla egg knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Egg
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Egg
+        VERTICAL: 0.4
+      POTION:
+        # Override settings.yml potion settings with this
+        OVERRIDE: false
+        # Splash potion's falling speed
+        SPEED: 0.593
+        # Splash potion's negative y-velocity
+        GRAVITY: 0.05
+        # Splash potion's vertical offset
+        VERTICAL-OFFSET: -20.0
+        # Splash potion's horizontal offset
+        HORIZONTAL-OFFSET: 0.0
+  CLASSIC:
+    TYPE: SMOOTH
+    # Horizontal Multiplier
+    HORIZONTAL: 0.36
+    # Vertical Value
+    VERTICAL: 0.38
+    # Friction Value (Knockback is divided by this)
+    FRICTION: 2.5
+    # Add a certain value to horizontal/vertical before actual calculations
+    EXTRA-HORIZONTAL: 0.425
+    EXTRA-VERTICAL: 0.1
+    # Y-Axis Limit for a player's velocity
+    Y-LIMIT: 0.4
+    # This value is multiplied in horizontal axis after calculations and sprint reset
+    SLOWDOWN: 0.6
+    COMBO:
+      # Toggle combo mode
+      ENABLED: false
+      # Horizontal velocity of a player in combo mode
+      VELOCITY: -0.05
+      # Vertical velocity of a player in combo mode
+      HEIGHT: 2.5
+    DAMAGE-TICKS:
+      # Override vanilla damage ticks with carbon's
+      OVERRIDE: true
+      # The delay between a player's ability to damage an entity
+      VALUE: 20
+      # Disables damage ticks for rods and arrows
+      BETTER-DETECTION: false
+    PROJECTILES:
+      ARROW:
+        # Override vanilla arrow knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by an Arrow
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by an Arrow
+        VERTICAL: 0.4
+        # Toggle whether an arrow moves you in a straight line
+        STRAIGHT-BOOST: false
+      FISH-ROD:
+        # Override vanilla rod knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Fish-Rod
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Fish-Rod
+        VERTICAL: 0.4
+        # Multiplies the amount given with the rod's vector magnitude (Faster/Smoother Rodding)
+        SPEED: 2.2
+      PEARL:
+        # Override vanilla pearl knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Pearl
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Pearl
+        VERTICAL: 0.4
+      EXPLODE:
+        # Override vanilla explosion knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Explosion
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Explosion
+        VERTICAL: 0.4
+        # Toggle whether an explosion moves you in a straight line
+        STRAIGHT-BOOST: false
+      SNOW-BALL:
+        # Override vanilla snowball knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Snowball
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Snowball
+        VERTICAL: 0.4
+      EGG:
+        # Override vanilla egg knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Egg
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Egg
+        VERTICAL: 0.4
+      POTION:
+        # Override settings.yml potion settings with this
+        OVERRIDE: false
+        # Splash potion's falling speed
+        SPEED: 0.593
+        # Splash potion's negative y-velocity
+        GRAVITY: 0.05
+        # Splash potion's vertical offset
+        VERTICAL-OFFSET: -20.0
+        # Splash potion's horizontal offset
+        HORIZONTAL-OFFSET: 0.0
+      Y-LIMIT:
+        # Should we limit projectile's vertical kb?
+        ENABLED: true
+        # Vertical limit value of projectiles
+        VALUE: 0.4000000059604645
+    # Should we limit horizontal movement?
+    LIMIT-HORIZONTAL: false
+    # X/Z-Axis Limit for a player's velocity
+    H-LIMIT: 0.45
+    # Should the vertical velocity be set to 0 after reaching limit?
+    DYNAMIC-LIMIT: false
+    # Should we use 1.7 Knockback?
+    ONE-POINT-SEVEN: false
+  SUMO:
+    TYPE: SMOOTH
+    # Horizontal Multiplier
+    HORIZONTAL: 0.53
+    # Vertical Value
+    VERTICAL: 0.5
+    # Add a certain value to horizontal before actual calculations
+    INHERIT-H-ENABLED: true
+    INHERIT-H-VALUE: 1.1
+    # Add a certain value to vertical before actual calculations
+    INHERIT-V-ENABLED: false
+    INHERIT-V-VALUE: 1.0
+    # Friction values, actual knockback is divided by this
+    FRICTION-H: 2.0
+    FRICTION-V: 2.0
+    # When player is hit but on ground, this value is multiplied with initial kb
+    GROUND-H: 1.01
+    GROUND-V: 1.0
+    # When player is hit but attacker is spriting, this value is multiplied with initial kb
+    SPRINT-H: 1.1
+    SPRINT-V: 1.0
+    # Y-Axis Limit for a player's velocity
+    Y-LIMIT: 0.36
+    # Dynamic vertical axis limit value
+    Y-LIMIT-VALUE: 2.0
+    # Should the attacker have their sprint reset upon attacking
+    STOP-SPRINT: true
+    # This value is multiplied in horizontal axis after calculations and sprint reset
+    SLOWDOWN: 0.6
+    COMBO:
+      # Toggle combo mode
+      ENABLED: false
+      # This is used to track when to move player back down from y axis
+      TICKS: 10
+      # Horizontal velocity of a player in combo mode
+      VELOCITY: -0.05
+      # Vertical velocity of a player in combo mode
+      HEIGHT: 2.5
+    DAMAGE-TICKS:
+      # Override vanilla damage ticks with carbon's
+      OVERRIDE: true
+      # The delay between a player's ability to damage an entity
+      VALUE: 20
+      # Disables damage ticks for rods and arrows
+      BETTER-DETECTION: false
+    PROJECTILES:
+      Y-LIMIT:
+        # Should we limit projectile's vertical kb?
+        ENABLED: true
+        # Vertical limit value of projectiles
+        VALUE: 0.4000000059604645
+      ARROW:
+        # Override vanilla arrow knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by an Arrow
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by an Arrow
+        VERTICAL: 0.4
+        # Toggle whether an arrow moves you in a straight line
+        STRAIGHT-BOOST: false
+      FISH-ROD:
+        # Override vanilla rod knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Fish-Rod
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Fish-Rod
+        VERTICAL: 0.4
+        # Multiplies the amount given with the rod's vector magnitude (Faster/Smoother Rodding)
+        SPEED: 2.2
+      PEARL:
+        # Override vanilla pearl knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Pearl
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Pearl
+        VERTICAL: 0.4
+      EXPLODE:
+        # Override vanilla explosion knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Explosion
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Explosion
+        VERTICAL: 0.4
+        # Toggle whether an explosion moves you in a straight line
+        STRAIGHT-BOOST: false
+      SNOW-BALL:
+        # Override vanilla snowball knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Snowball
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Snowball
+        VERTICAL: 0.4
+      EGG:
+        # Override vanilla egg knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Egg
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Egg
+        VERTICAL: 0.4
+      POTION:
+        # Override settings.yml potion settings with this
+        OVERRIDE: false
+        # Splash potion's falling speed
+        SPEED: 0.593
+        # Splash potion's negative y-velocity
+        GRAVITY: 0.05
+        # Splash potion's vertical offset
+        VERTICAL-OFFSET: -20.0
+        # Splash potion's horizontal offset
+        HORIZONTAL-OFFSET: 0.0
+    # Friction Value (Knockback is divided by this)
+    FRICTION: 2.5
+    # Add a certain value to horizontal/vertical before actual calculations
+    EXTRA-HORIZONTAL: 0.435
+    # Should we use 1.7 Knockback?
+    ONE-POINT-SEVEN: false
+    EXTRA-VERTICAL: 0.0
+    # Should we limit horizontal movement?
+    LIMIT-HORIZONTAL: false
+    # X/Z-Axis Limit for a player's velocity
+    H-LIMIT: 0.45
+    # Should the vertical velocity be set to 0 after reaching limit?
+    DYNAMIC-LIMIT: false
+  SUMOFLY:
+    TYPE: DETAILED
+    # Horizontal Multiplier
+    HORIZONTAL: 0.235
+    # Vertical Value
+    VERTICAL: 0.2
+    # Add a certain value to horizontal before actual calculations
+    INHERIT-H-ENABLED: true
+    INHERIT-H-VALUE: 1.15
+    # Add a certain value to vertical before actual calculations
+    INHERIT-V-ENABLED: false
+    INHERIT-V-VALUE: 1.0
+    # Friction values, actual knockback is divided by this
+    FRICTION-H: 2.0
+    FRICTION-V: 2.0
+    # When player is hit but on ground, this value is multiplied with initial kb
+    GROUND-H: 1.0
+    GROUND-V: 1.0
+    # When player is hit but attacker is spriting, this value is multiplied with initial kb
+    SPRINT-H: 1.0
+    SPRINT-V: 1.0
+    # Should we dynamically limit player's vertical axis?
+    Y-LIMIT: true
+    # Dynamic vertical axis limit value
+    Y-LIMIT-VALUE: 2.4
+    # Should the attacker have their sprint reset upon attacking
+    STOP-SPRINT: true
+    # This value is multiplied in horizontal axis after calculations and sprint reset
+    SLOWDOWN: 0.2
+    COMBO:
+      # Toggle combo mode
+      ENABLED: false
+      # This is used to track when to move player back down from y axis
+      TICKS: 10
+      # Horizontal velocity of a player in combo mode
+      VELOCITY: -0.02
+      # Vertical velocity of a player in combo mode
+      HEIGHT: 2.5
+    DAMAGE-TICKS:
+      # Override vanilla damage ticks with carbon's
+      OVERRIDE: true
+      # The delay between a player's ability to damage an entity
+      VALUE: 3
+      # Disables damage ticks for rods and arrows
+      BETTER-DETECTION: false
+    PROJECTILES:
+      Y-LIMIT:
+        # Should we limit projectile's vertical kb?
+        ENABLED: true
+        # Vertical limit value of projectiles
+        VALUE: 0.4000000059604645
+      ARROW:
+        # Override vanilla arrow knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by an Arrow
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by an Arrow
+        VERTICAL: 0.4
+        # Toggle whether an arrow moves you in a straight line
+        STRAIGHT-BOOST: false
+      FISH-ROD:
+        # Override vanilla rod knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Fish-Rod
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Fish-Rod
+        VERTICAL: 0.4
+        # Multiplies the amount given with the rod's vector magnitude (Faster/Smoother Rodding)
+        SPEED: 2.2
+      PEARL:
+        # Override vanilla pearl knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Pearl
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Pearl
+        VERTICAL: 0.4
+      EXPLODE:
+        # Override vanilla explosion knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Explosion
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Explosion
+        VERTICAL: 0.4
+        # Toggle whether an explosion moves you in a straight line
+        STRAIGHT-BOOST: false
+      SNOW-BALL:
+        # Override vanilla snowball knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Snowball
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Snowball
+        VERTICAL: 0.4
+      EGG:
+        # Override vanilla egg knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Egg
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Egg
+        VERTICAL: 0.4
+      POTION:
+        # Override settings.yml potion settings with this
+        OVERRIDE: false
+        # Splash potion's falling speed
+        SPEED: 0.593
+        # Splash potion's negative y-velocity
+        GRAVITY: 0.05
+        # Splash potion's vertical offset
+        VERTICAL-OFFSET: -20.0
+        # Splash potion's horizontal offset
+        HORIZONTAL-OFFSET: 0.0
+  GAPPLE:
+    TYPE: DETAILED
+    # Horizontal Multiplier
+    HORIZONTAL: 0.451
+    # Vertical Value
+    VERTICAL: 0.36
+    # Add a certain value to horizontal before actual calculations
+    INHERIT-H-ENABLED: true
+    INHERIT-H-VALUE: 1.38
+    # Add a certain value to vertical before actual calculations
+    INHERIT-V-ENABLED: false
+    INHERIT-V-VALUE: 1.0
+    # Friction values, actual knockback is divided by this
+    FRICTION-H: 2.0
+    FRICTION-V: 2.0
+    # When player is hit but on ground, this value is multiplied with initial kb
+    GROUND-H: 1.2
+    GROUND-V: 1.0
+    # When player is hit but attacker is spriting, this value is multiplied with initial kb
+    SPRINT-H: 1.2
+    SPRINT-V: 1.0
+    # Should we dynamically limit player's vertical axis?
+    Y-LIMIT: true
+    # Dynamic vertical axis limit value
+    Y-LIMIT-VALUE: 2.0
+    # Should the attacker have their sprint reset upon attacking
+    STOP-SPRINT: true
+    # This value is multiplied in horizontal axis after calculations and sprint reset
+    SLOWDOWN: 0.55
+    COMBO:
+      # Toggle combo mode
+      ENABLED: false
+      # This is used to track when to move player back down from y axis
+      TICKS: 10
+      # Horizontal velocity of a player in combo mode
+      VELOCITY: -0.05
+      # Vertical velocity of a player in combo mode
+      HEIGHT: 2.5
+    DAMAGE-TICKS:
+      # Override vanilla damage ticks with carbon's
+      OVERRIDE: true
+      # The delay between a player's ability to damage an entity
+      VALUE: 20
+      # Disables damage ticks for rods and arrows
+      BETTER-DETECTION: false
+    PROJECTILES:
+      Y-LIMIT:
+        # Should we limit projectile's vertical kb?
+        ENABLED: true
+        # Vertical limit value of projectiles
+        VALUE: 0.4000000059604645
+      ARROW:
+        # Override vanilla arrow knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by an Arrow
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by an Arrow
+        VERTICAL: 0.4
+        # Toggle whether an arrow moves you in a straight line
+        STRAIGHT-BOOST: false
+      FISH-ROD:
+        # Override vanilla rod knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Fish-Rod
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Fish-Rod
+        VERTICAL: 0.4
+        # Multiplies the amount given with the rod's vector magnitude (Faster/Smoother Rodding)
+        SPEED: 2.2
+      PEARL:
+        # Override vanilla pearl knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Pearl
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Pearl
+        VERTICAL: 0.4
+      EXPLODE:
+        # Override vanilla explosion knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Explosion
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Explosion
+        VERTICAL: 0.4
+        # Toggle whether an explosion moves you in a straight line
+        STRAIGHT-BOOST: false
+      SNOW-BALL:
+        # Override vanilla snowball knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Snowball
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Snowball
+        VERTICAL: 0.4
+      EGG:
+        # Override vanilla egg knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Egg
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Egg
+        VERTICAL: 0.4
+      POTION:
+        # Override settings.yml potion settings with this
+        OVERRIDE: false
+        # Splash potion's falling speed
+        SPEED: 0.593
+        # Splash potion's negative y-velocity
+        GRAVITY: 0.05
+        # Splash potion's vertical offset
+        VERTICAL-OFFSET: -20.0
+        # Splash potion's horizontal offset
+        HORIZONTAL-OFFSET: 0.0
+  SKYWARS:
+    TYPE: EASY
+    # Horizontal Multiplier
+    HORIZONTAL: 0.5763
+    # Vertical Value
+    VERTICAL: 1.0
+    # Add a certain value to horizontal/vertical before actual calculations
+    EXTRA-HORIZONTAL: 0.213
+    EXTRA-VERTICAL: 0.0
+    # Friction Value (Knockback is divided by this)
+    FRICTION: 1.78
+    # Y-Axis Limit for a player's velocity
+    Y-LIMIT: 0.357
+    DAMAGE-TICKS:
+      # Override vanilla damage ticks with carbon's
+      OVERRIDE: true
+      # The delay between a player's ability to damage an entity
+      VALUE: 20
+      # Disables damage ticks for rods and arrows
+      BETTER-DETECTION: false
+    # Should the vertical velocity be set to 0 after reaching limit?
+    DYNAMIC-LIMIT: false
+    # Should we limit horizontal movement?
+    LIMIT-HORIZONTAL: false
+    # X/Z-Axis Limit for a player's velocity
+    H-LIMIT: 0.45
+    PROJECTILES:
+      Y-LIMIT:
+        # Should we limit projectile's vertical kb?
+        ENABLED: true
+        # Vertical limit value of projectiles
+        VALUE: 0.35
+      ARROW:
+        # Override vanilla arrow knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by an Arrow
+        HORIZONTAL: 0.8
+        # Vertical knockback dealt by an Arrow
+        VERTICAL: 2.2222222222222222E21
+        # Toggle whether an arrow moves you in a straight line
+        STRAIGHT-BOOST: true
+      FISH-ROD:
+        # Override vanilla rod knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Fish-Rod
+        HORIZONTAL: 0.6
+        # Vertical knockback dealt by a Fish-Rod
+        VERTICAL: 12321.0
+        # Multiplies the amount given with the rod's vector magnitude (Faster/Smoother Rodding)
+        SPEED: 1.45
+      PEARL:
+        # Override vanilla pearl knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Pearl
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Pearl
+        VERTICAL: 0.4
+      EXPLODE:
+        # Override vanilla explosion knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Explosion
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Explosion
+        VERTICAL: 0.4
+        # Toggle whether an explosion moves you in a straight line
+        STRAIGHT-BOOST: false
+      SNOW-BALL:
+        # Override vanilla snowball knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Snowball
+        HORIZONTAL: 0.5
+        # Vertical knockback dealt by a Snowball
+        VERTICAL: 0.4
+      EGG:
+        # Override vanilla egg knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Egg
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Egg
+        VERTICAL: 0.4
+      POTION:
+        # Override settings.yml potion settings with this
+        OVERRIDE: false
+        # Splash potion's falling speed
+        SPEED: 0.593
+        # Splash potion's negative y-velocity
+        GRAVITY: 0.05
+        # Splash potion's vertical offset
+        VERTICAL-OFFSET: -20.0
+        # Splash potion's horizontal offset
+        HORIZONTAL-OFFSET: 0.0
+    # Should we use 1.7 Knockback?
+    ONE-POINT-SEVEN: false
+  BRIDGE:
+    TYPE: DETAILED
+    # Horizontal Multiplier
+    HORIZONTAL: 0.44452
+    # Vertical Value
+    VERTICAL: 0.355
+    # Add a certain value to horizontal before actual calculations
+    INHERIT-H-ENABLED: true
+    INHERIT-H-VALUE: 1.613
+    # Add a certain value to vertical before actual calculations
+    INHERIT-V-ENABLED: false
+    INHERIT-V-VALUE: 1.4
+    # Friction values, actual knockback is divided by this
+    FRICTION-H: 2.0
+    FRICTION-V: 2.0
+    # When player is hit but on ground, this value is multiplied with initial kb
+    GROUND-H: 1.1
+    GROUND-V: 1.0
+    # When player is hit but attacker is spriting, this value is multiplied with initial kb
+    SPRINT-H: 1.2
+    SPRINT-V: 1.0
+    # Should we dynamically limit player's vertical axis?
+    Y-LIMIT: false
+    # Dynamic vertical axis limit value
+    Y-LIMIT-VALUE: 1.2
+    # Should the attacker have their sprint reset upon attacking
+    STOP-SPRINT: true
+    # This value is multiplied in horizontal axis after calculations and sprint reset
+    SLOWDOWN: 0.2
+    COMBO:
+      # Toggle combo mode
+      ENABLED: false
+      # This is used to track when to move player back down from y axis
+      TICKS: 10
+      # Horizontal velocity of a player in combo mode
+      VELOCITY: -0.05
+      # Vertical velocity of a player in combo mode
+      HEIGHT: 2.5
+    DAMAGE-TICKS:
+      # Override vanilla damage ticks with carbon's
+      OVERRIDE: true
+      # The delay between a player's ability to damage an entity
+      VALUE: 20
+      # Disables damage ticks for rods and arrows
+      BETTER-DETECTION: false
+    PROJECTILES:
+      Y-LIMIT:
+        # Should we limit projectile's vertical kb?
+        ENABLED: true
+        # Vertical limit value of projectiles
+        VALUE: 0.4000000059604645
+      ARROW:
+        # Override vanilla arrow knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by an Arrow
+        HORIZONTAL: 0.45
+        # Vertical knockback dealt by an Arrow
+        VERTICAL: 0.4
+        # Toggle whether an arrow moves you in a straight line
+        STRAIGHT-BOOST: true
+      FISH-ROD:
+        # Override vanilla rod knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Fish-Rod
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Fish-Rod
+        VERTICAL: 0.4
+        # Multiplies the amount given with the rod's vector magnitude (Faster/Smoother Rodding)
+        SPEED: 2.2
+      PEARL:
+        # Override vanilla pearl knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Pearl
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Pearl
+        VERTICAL: 0.4
+      EXPLODE:
+        # Override vanilla explosion knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Explosion
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Explosion
+        VERTICAL: 0.4
+        # Toggle whether an explosion moves you in a straight line
+        STRAIGHT-BOOST: false
+      SNOW-BALL:
+        # Override vanilla snowball knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Snowball
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Snowball
+        VERTICAL: 0.4
+      EGG:
+        # Override vanilla egg knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Egg
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Egg
+        VERTICAL: 0.4
+      POTION:
+        # Override settings.yml potion settings with this
+        OVERRIDE: false
+        # Splash potion's falling speed
+        SPEED: 0.593
+        # Splash potion's negative y-velocity
+        GRAVITY: 0.05
+        # Splash potion's vertical offset
+        VERTICAL-OFFSET: -20.0
+        # Splash potion's horizontal offset
+        HORIZONTAL-OFFSET: 0.0
+  BEDFIGHT:
+    TYPE: EXPERT
+    # Horizontal Multiplier
+    HORIZONTAL: 0.6
+    # Vertical Value
+    VERTICAL: 0.37
+    # Add a certain value to horizontal before actual calculations
+    INHERIT-H-ENABLED: false
+    INHERIT-H: 0.2
+    # Add a certain value to vertical before actual calculations
+    INHERIT-V-ENABLED: false
+    INHERIT-V: 1.0
+    # When player is hit but on ground, this value is multiplied with initial kb
+    GROUND-H: 1.1
+    GROUND-V: 0.9
+    # When player is hit but attacker is spriting, this value is multiplied with initial kb
+    SPRINT-H: 1.2
+    SPRINT-V: 1.15123
+    # Should we dynamically limit player's vertical axis?
+    Y-LIMIT: true
+    # Dynamic vertical axis limit value
+    Y-LIMIT-VALUE: 1.2
+    # Should the attacker have their sprint reset upon attacking
+    STOP-SPRINT: true
+    # This value is multiplied in horizontal axis after calculations and sprint reset
+    SLOWDOWN: 0.1
+    COMBO:
+      # Toggle combo mode
+      ENABLED: false
+      # This is used to track when to move player back down from y axis
+      TICKS: 10
+      # Horizontal velocity of a player in combo mode
+      VELOCITY: -0.05
+      # Vertical velocity of a player in combo mode
+      HEIGHT: 2.5
+    DAMAGE-TICKS:
+      # Override vanilla damage ticks with carbon's
+      OVERRIDE: true
+      # The delay between a player's ability to damage an entity
+      VALUE: 20
+      # Disables damage ticks for rods and arrows
+      BETTER-DETECTION: false
+    PROJECTILES:
+      Y-LIMIT:
+        # Should we limit projectile's vertical kb?
+        ENABLED: true
+        # Vertical limit value of projectiles
+        VALUE: 0.4000000059604645
+      ARROW:
+        # Override vanilla arrow knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by an Arrow
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by an Arrow
+        VERTICAL: 0.4
+        # Toggle whether an arrow moves you in a straight line
+        STRAIGHT-BOOST: false
+      FISH-ROD:
+        # Override vanilla rod knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Fish-Rod
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Fish-Rod
+        VERTICAL: 0.4
+        # Multiplies the amount given with the rod's vector magnitude (Faster/Smoother Rodding)
+        SPEED: 2.2
+      PEARL:
+        # Override vanilla pearl knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Pearl
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Pearl
+        VERTICAL: 0.4
+      EXPLODE:
+        # Override vanilla explosion knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Explosion
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Explosion
+        VERTICAL: 0.4
+        # Toggle whether an explosion moves you in a straight line
+        STRAIGHT-BOOST: false
+      SNOW-BALL:
+        # Override vanilla snowball knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Snowball
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Snowball
+        VERTICAL: 0.4
+      EGG:
+        # Override vanilla egg knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Egg
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Egg
+        VERTICAL: 0.4
+      POTION:
+        # Override settings.yml potion settings with this
+        OVERRIDE: false
+        # Splash potion's falling speed
+        SPEED: 0.593
+        # Splash potion's negative y-velocity
+        GRAVITY: 0.05
+        # Splash potion's vertical offset
+        VERTICAL-OFFSET: -20.0
+        # Splash potion's horizontal offset
+        HORIZONTAL-OFFSET: 0.0
+    # Friction values, actual knockback is divided by this
+    FRICTION-H: 1.0
+    FRICTION-V: 1.0
+  BRIDGES:
+    TYPE: EXPERT
+    # Horizontal Multiplier
+    HORIZONTAL: 0.43
+    # Vertical Value
+    VERTICAL: 0.33
+    # Add a certain value to horizontal before actual calculations
+    INHERIT-H-ENABLED: true
+    # Add a certain value to vertical before actual calculations
+    INHERIT-V-ENABLED: false
+    # Friction values, actual knockback is divided by this
+    FRICTION-H: 1.0
+    FRICTION-V: 1.0
+    # When player is hit but on ground, this value is multiplied with initial kb
+    GROUND-H: 1.1
+    GROUND-V: 1.0
+    # When player is hit but attacker is spriting, this value is multiplied with initial kb
+    SPRINT-H: 1.2
+    SPRINT-V: 1.0
+    # Should we dynamically limit player's vertical axis?
+    Y-LIMIT: true
+    # Dynamic vertical axis limit value
+    Y-LIMIT-VALUE: 1.2
+    # Should the attacker have their sprint reset upon attacking
+    STOP-SPRINT: true
+    # This value is multiplied in horizontal axis after calculations and sprint reset
+    SLOWDOWN: 0.6
+    COMBO:
+      # Toggle combo mode
+      ENABLED: false
+      # This is used to track when to move player back down from y axis
+      TICKS: 10
+      # Horizontal velocity of a player in combo mode
+      VELOCITY: -0.05
+      # Vertical velocity of a player in combo mode
+      HEIGHT: 2.5
+    DAMAGE-TICKS:
+      # Override vanilla damage ticks with carbon's
+      OVERRIDE: true
+      # The delay between a player's ability to damage an entity
+      VALUE: 20
+      # Disables damage ticks for rods and arrows
+      BETTER-DETECTION: false
+    PROJECTILES:
+      Y-LIMIT:
+        # Should we limit projectile's vertical kb?
+        ENABLED: true
+        # Vertical limit value of projectiles
+        VALUE: 0.4000000059604645
+      ARROW:
+        # Override vanilla arrow knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by an Arrow
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by an Arrow
+        VERTICAL: 0.4
+        # Toggle whether an arrow moves you in a straight line
+        STRAIGHT-BOOST: false
+      FISH-ROD:
+        # Override vanilla rod knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Fish-Rod
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Fish-Rod
+        VERTICAL: 0.4
+        # Multiplies the amount given with the rod's vector magnitude (Faster/Smoother Rodding)
+        SPEED: 2.2
+      PEARL:
+        # Override vanilla pearl knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Pearl
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Pearl
+        VERTICAL: 0.4
+      EXPLODE:
+        # Override vanilla explosion knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Explosion
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Explosion
+        VERTICAL: 0.4
+        # Toggle whether an explosion moves you in a straight line
+        STRAIGHT-BOOST: false
+      SNOW-BALL:
+        # Override vanilla snowball knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Snowball
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Snowball
+        VERTICAL: 0.4
+      EGG:
+        # Override vanilla egg knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Egg
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Egg
+        VERTICAL: 0.4
+      POTION:
+        # Override settings.yml potion settings with this
+        OVERRIDE: false
+        # Splash potion's falling speed
+        SPEED: 0.593
+        # Splash potion's negative y-velocity
+        GRAVITY: 0.05
+        # Splash potion's horizontal offset
+        HORIZONTAL-OFFSET: 0.0
+        # Splash potion's vertical offset
+        VERTICAL-OFFSET: -20.0
+    INHERIT-H: 1.0
+    INHERIT-V: 1.0
+  PEARLFIGHT:
+    TYPE: EASY
+    # Should we use 1.7 Knockback?
+    ONE-POINT-SEVEN: false
+    # Horizontal Multiplier
+    HORIZONTAL: 0.48
+    # Vertical Value
+    VERTICAL: 0.36
+    # Add a certain value to horizontal/vertical before actual calculations
+    EXTRA-HORIZONTAL: 0.5
+    EXTRA-VERTICAL: 0.1
+    # Friction Value (Knockback is divided by this)
+    FRICTION: 2.0
+    # Y-Axis Limit for a player's velocity
+    Y-LIMIT: 5.0
+    DAMAGE-TICKS:
+      # Override vanilla damage ticks with carbon's
+      OVERRIDE: true
+      # The delay between a player's ability to damage an entity
+      VALUE: 20
+      # Disables damage ticks for rods and arrows
+      BETTER-DETECTION: false
+    # Should the vertical velocity be set to 0 after reaching limit?
+    DYNAMIC-LIMIT: false
+    # Should we limit horizontal movement?
+    LIMIT-HORIZONTAL: false
+    # X/Z-Axis Limit for a player's velocity
+    H-LIMIT: 0.45
+    PROJECTILES:
+      Y-LIMIT:
+        # Should we limit projectile's vertical kb?
+        ENABLED: true
+        # Vertical limit value of projectiles
+        VALUE: 0.4000000059604645
+      ARROW:
+        # Override vanilla arrow knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by an Arrow
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by an Arrow
+        VERTICAL: 0.4
+        # Toggle whether an arrow moves you in a straight line
+        STRAIGHT-BOOST: false
+      FISH-ROD:
+        # Override vanilla rod knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Fish-Rod
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Fish-Rod
+        VERTICAL: 0.4
+        # Multiplies the amount given with the rod's vector magnitude (Faster/Smoother Rodding)
+        SPEED: 2.2
+      PEARL:
+        # Override vanilla pearl knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Pearl
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Pearl
+        VERTICAL: 0.4
+      EXPLODE:
+        # Override vanilla explosion knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Explosion
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Explosion
+        VERTICAL: 0.4
+        # Toggle whether an explosion moves you in a straight line
+        STRAIGHT-BOOST: false
+      SNOW-BALL:
+        # Override vanilla snowball knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Snowball
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Snowball
+        VERTICAL: 0.4
+      EGG:
+        # Override vanilla egg knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Egg
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Egg
+        VERTICAL: 0.4
+      POTION:
+        # Override settings.yml potion settings with this
+        OVERRIDE: false
+        # Splash potion's falling speed
+        SPEED: 0.593
+        # Splash potion's negative y-velocity
+        GRAVITY: 0.05
+        # Splash potion's horizontal offset
+        HORIZONTAL-OFFSET: 0.0
+        # Splash potion's vertical offset
+        VERTICAL-OFFSET: -20.0
+  INVADED:
+    TYPE: EXPLICIT
+    # Horizontal Multiplier
+    HORIZONTAL: 0.44452682
+    # Vertical Value
+    VERTICAL: 0.3555
+    EXTRA-H: 0.435
+    EXTRA-V: 0.0
+    # Friction values, actual knockback is divided by this
+    FRICTION-H: 2.0
+    FRICTION-V: 2.0
+    # When player is hit but on ground, this value is multiplied with initial kb
+    GROUND-H: 1.2
+    GROUND-V: 1.0
+    # When player is hit but attacker is spriting, this value is multiplied with initial kb
+    SPRINT-H: 1.2
+    SPRINT-V: 1.0
+    # Should we limit y limit based on distance between player and opponent?
+    LIMIT-Y-DIFFERENCE: true
+    # Maximum y level difference between player and opponent.
+    MAX-Y-DIFFERENCE: 1.2
+    # Should we use 1.7 Knockback?
+    ONE-POINT-SEVEN: false
+    # Should the attacker have their sprint reset upon attacking
+    STOP-SPRINT: true
+    # This value is multiplied in horizontal axis after calculations and sprint reset
+    SLOWDOWN: 0.2
+    # Should we limit horizontal movement?
+    LIMIT-HORIZONTAL: false
+    # X/Z-Axis Limit for a player's velocity
+    H-LIMIT: 0.45
+    # Should we dynamically limit player's vertical axis?
+    Y-LIMIT: false
+    DAMAGE-TICKS:
+      # Override vanilla damage ticks with carbon's
+      OVERRIDE: true
+      # The delay between a player's ability to damage an entity
+      VALUE: 20
+      # Disables damage ticks for rods and arrows
+      BETTER-DETECTION: false
+    PROJECTILES:
+      Y-LIMIT:
+        # Should we limit projectile's vertical kb?
+        ENABLED: true
+        # Vertical limit value of projectiles
+        VALUE: 0.4000000059604645
+      ARROW:
+        # Override vanilla arrow knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by an Arrow
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by an Arrow
+        VERTICAL: 0.4
+        # Toggle whether an arrow moves you in a straight line
+        STRAIGHT-BOOST: false
+      FISH-ROD:
+        # Override vanilla rod knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Fish-Rod
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Fish-Rod
+        VERTICAL: 0.4
+        # Multiplies the amount given with the rod's vector magnitude (Faster/Smoother Rodding)
+        SPEED: 2.2
+      PEARL:
+        # Override vanilla pearl knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Pearl
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Pearl
+        VERTICAL: 0.4
+      EXPLODE:
+        # Override vanilla explosion knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Explosion
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Explosion
+        VERTICAL: 0.4
+        # Toggle whether an explosion moves you in a straight line
+        STRAIGHT-BOOST: false
+      SNOW-BALL:
+        # Override vanilla snowball knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Snowball
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Snowball
+        VERTICAL: 0.4
+      EGG:
+        # Override vanilla egg knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Egg
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Egg
+        VERTICAL: 0.4
+      POTION:
+        # Override settings.yml potion settings with this
+        OVERRIDE: false
+        # Splash potion's falling speed
+        SPEED: 0.593
+        # Splash potion's negative y-velocity
+        GRAVITY: 0.05
+        # Splash potion's horizontal offset
+        HORIZONTAL-OFFSET: 0.0
+        # Splash potion's vertical offset
+        VERTICAL-OFFSET: -20.0
+    # Dynamic vertical axis limit value
+    Y-LIMIT-VALUE: 1.2
+  TNTSUMO:
+    TYPE: EASY
+    # Should we use 1.7 Knockback?
+    ONE-POINT-SEVEN: false
+    # Horizontal Multiplier
+    HORIZONTAL: 0.4
+    # Vertical Value
+    VERTICAL: 0.4
+    # Add a certain value to horizontal/vertical before actual calculations
+    EXTRA-HORIZONTAL: 0.5
+    EXTRA-VERTICAL: 0.1
+    # Friction Value (Knockback is divided by this)
+    FRICTION: 2.0
+    # Y-Axis Limit for a player's velocity
+    Y-LIMIT: 0.4000000059604645
+    DAMAGE-TICKS:
+      # Override vanilla damage ticks with carbon's
+      OVERRIDE: true
+      # The delay between a player's ability to damage an entity
+      VALUE: 20
+      # Disables damage ticks for rods and arrows
+      BETTER-DETECTION: false
+    # Should the vertical velocity be set to 0 after reaching limit?
+    DYNAMIC-LIMIT: false
+    # Should we limit horizontal movement?
+    LIMIT-HORIZONTAL: false
+    # X/Z-Axis Limit for a player's velocity
+    H-LIMIT: 0.45
+    PROJECTILES:
+      Y-LIMIT:
+        # Should we limit projectile's vertical kb?
+        ENABLED: true
+        # Vertical limit value of projectiles
+        VALUE: 0.4000000059604645
+      ARROW:
+        # Override vanilla arrow knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by an Arrow
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by an Arrow
+        VERTICAL: 0.4
+        # Toggle whether an arrow moves you in a straight line
+        STRAIGHT-BOOST: false
+      FISH-ROD:
+        # Override vanilla rod knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Fish-Rod
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Fish-Rod
+        VERTICAL: 0.4
+        # Multiplies the amount given with the rod's vector magnitude (Faster/Smoother Rodding)
+        SPEED: 2.2
+      PEARL:
+        # Override vanilla pearl knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Pearl
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Pearl
+        VERTICAL: 0.4
+      EXPLODE:
+        # Override vanilla explosion knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Explosion
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Explosion
+        VERTICAL: 0.4
+        # Toggle whether an explosion moves you in a straight line
+        STRAIGHT-BOOST: false
+      SNOW-BALL:
+        # Override vanilla snowball knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Snowball
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Snowball
+        VERTICAL: 0.4
+      EGG:
+        # Override vanilla egg knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Egg
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Egg
+        VERTICAL: 0.4
+      POTION:
+        # Override settings.yml potion settings with this
+        OVERRIDE: false
+        # Splash potion's falling speed
+        SPEED: 0.593
+        # Splash potion's negative y-velocity
+        GRAVITY: 0.05
+        # Splash potion's horizontal offset
+        HORIZONTAL-OFFSET: 0.0
+        # Splash potion's vertical offset
+        VERTICAL-OFFSET: -20.0
+  NODEBUFF:
+    TYPE: DETAILED
+    # Horizontal Multiplier
+    HORIZONTAL: 0.47501
+    # Vertical Value
+    VERTICAL: 0.3504
+    # Add a certain value to horizontal before actual calculations
+    INHERIT-H-ENABLED: true
+    INHERIT-H-VALUE: 1.2
+    # Add a certain value to vertical before actual calculations
+    INHERIT-V-ENABLED: false
+    INHERIT-V-VALUE: 1.0
+    # Friction values, actual knockback is divided by this
+    FRICTION-H: 2.0
+    FRICTION-V: 2.0
+    # When player is hit but on ground, this value is multiplied with initial kb
+    GROUND-H: 1.1
+    GROUND-V: 1.0
+    # When player is hit but attacker is spriting, this value is multiplied with initial kb
+    SPRINT-H: 1.22
+    SPRINT-V: 1.0
+    # Should we dynamically limit player's vertical axis?
+    Y-LIMIT: true
+    # Dynamic vertical axis limit value
+    Y-LIMIT-VALUE: 1.2
+    # Should the attacker have their sprint reset upon attacking
+    STOP-SPRINT: true
+    # This value is multiplied in horizontal axis after calculations and sprint reset
+    SLOWDOWN: 0.6
+    COMBO:
+      # Toggle combo mode
+      ENABLED: false
+      # This is used to track when to move player back down from y axis
+      TICKS: 10
+      # Horizontal velocity of a player in combo mode
+      VELOCITY: -0.05
+      # Vertical velocity of a player in combo mode
+      HEIGHT: 2.5
+    DAMAGE-TICKS:
+      # Override vanilla damage ticks with carbon's
+      OVERRIDE: true
+      # The delay between a player's ability to damage an entity
+      VALUE: 20
+      # Disables damage ticks for rods and arrows
+      BETTER-DETECTION: false
+    PROJECTILES:
+      Y-LIMIT:
+        # Should we limit projectile's vertical kb?
+        ENABLED: true
+        # Vertical limit value of projectiles
+        VALUE: 0.4000000059604645
+      ARROW:
+        # Override vanilla arrow knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by an Arrow
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by an Arrow
+        VERTICAL: 0.4
+        # Toggle whether an arrow moves you in a straight line
+        STRAIGHT-BOOST: false
+      FISH-ROD:
+        # Override vanilla rod knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Fish-Rod
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Fish-Rod
+        VERTICAL: 0.4
+        # Multiplies the amount given with the rod's vector magnitude (Faster/Smoother Rodding)
+        SPEED: 2.2
+      PEARL:
+        # Override vanilla pearl knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Pearl
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Pearl
+        VERTICAL: 0.4
+      EXPLODE:
+        # Override vanilla explosion knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Explosion
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Explosion
+        VERTICAL: 0.4
+        # Toggle whether an explosion moves you in a straight line
+        STRAIGHT-BOOST: false
+      SNOW-BALL:
+        # Override vanilla snowball knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Snowball
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Snowball
+        VERTICAL: 0.4
+      EGG:
+        # Override vanilla egg knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Egg
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Egg
+        VERTICAL: 0.4
+      POTION:
+        # Override settings.yml potion settings with this
+        OVERRIDE: false
+        # Splash potion's falling speed
+        SPEED: 0.593
+        # Splash potion's negative y-velocity
+        GRAVITY: 0.05
+        # Splash potion's horizontal offset
+        HORIZONTAL-OFFSET: 0.0
+        # Splash potion's vertical offset
+        VERTICAL-OFFSET: -20.0
+  BUILDUHC:
+    TYPE: DETAILED
+    # Horizontal Multiplier
+    HORIZONTAL: 0.44452682
+    # Vertical Value
+    VERTICAL: 0.3555
+    # Add a certain value to horizontal before actual calculations
+    INHERIT-H-ENABLED: true
+    INHERIT-H-VALUE: 1.0
+    # Add a certain value to vertical before actual calculations
+    INHERIT-V-ENABLED: false
+    INHERIT-V-VALUE: 1.0
+    # Friction values, actual knockback is divided by this
+    FRICTION-H: 2.0
+    FRICTION-V: 2.0
+    # When player is hit but on ground, this value is multiplied with initial kb
+    GROUND-H: 1.2
+    GROUND-V: 1.0
+    # When player is hit but attacker is spriting, this value is multiplied with initial kb
+    SPRINT-H: 1.1
+    SPRINT-V: 1.0
+    # Should we dynamically limit player's vertical axis?
+    Y-LIMIT: true
+    # Dynamic vertical axis limit value
+    Y-LIMIT-VALUE: 5.0
+    # Should the attacker have their sprint reset upon attacking
+    STOP-SPRINT: true
+    # This value is multiplied in horizontal axis after calculations and sprint reset
+    SLOWDOWN: 0.6
+    COMBO:
+      # Toggle combo mode
+      ENABLED: false
+      # This is used to track when to move player back down from y axis
+      TICKS: 10
+      # Horizontal velocity of a player in combo mode
+      VELOCITY: -0.05
+      # Vertical velocity of a player in combo mode
+      HEIGHT: 2.5
+    DAMAGE-TICKS:
+      # Override vanilla damage ticks with carbon's
+      OVERRIDE: true
+      # The delay between a player's ability to damage an entity
+      VALUE: 19
+      # Disables damage ticks for rods and arrows
+      BETTER-DETECTION: true
+    PROJECTILES:
+      Y-LIMIT:
+        # Should we limit projectile's vertical kb?
+        ENABLED: true
+        # Vertical limit value of projectiles
+        VALUE: 0.4000000059604645
+      ARROW:
+        # Override vanilla arrow knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by an Arrow
+        HORIZONTAL: 0.8
+        # Vertical knockback dealt by an Arrow
+        VERTICAL: 0.9
+        # Toggle whether an arrow moves you in a straight line
+        STRAIGHT-BOOST: true
+      FISH-ROD:
+        # Override vanilla rod knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Fish-Rod
+        HORIZONTAL: 0.7
+        # Vertical knockback dealt by a Fish-Rod
+        VERTICAL: 1.0
+        # Multiplies the amount given with the rod's vector magnitude (Faster/Smoother Rodding)
+        SPEED: 2.2
+      PEARL:
+        # Override vanilla pearl knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Pearl
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Pearl
+        VERTICAL: 0.4
+      EXPLODE:
+        # Override vanilla explosion knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Explosion
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Explosion
+        VERTICAL: 0.4
+        # Toggle whether an explosion moves you in a straight line
+        STRAIGHT-BOOST: false
+      SNOW-BALL:
+        # Override vanilla snowball knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Snowball
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Snowball
+        VERTICAL: 0.4
+      EGG:
+        # Override vanilla egg knockback with carbon's
+        OVERRIDE: true
+        # Horizontal knockback dealt by a Egg
+        HORIZONTAL: 0.4
+        # Vertical knockback dealt by a Egg
+        VERTICAL: 0.4
+      POTION:
+        # Override settings.yml potion settings with this
+        OVERRIDE: false
+        # Splash potion's falling speed
+        SPEED: 0.593
+        # Splash potion's negative y-velocity
+        GRAVITY: 0.05
+        # Splash potion's horizontal offset
+        HORIZONTAL-OFFSET: 0.0
+        # Splash potion's vertical offset
+        VERTICAL-OFFSET: -20.0

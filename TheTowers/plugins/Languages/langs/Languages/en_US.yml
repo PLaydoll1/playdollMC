@@ -1,0 +1,5 @@
+prefix: '&c&l(!) &7'
+loadingLang: '&aLoading your language from your minecraft...'
+loadedLang: '&7Your language is &8| &a{0}'
+invalidLang: '&7Invalid language!'
+reloaded: '&7The configuration has been loaded correctly!'

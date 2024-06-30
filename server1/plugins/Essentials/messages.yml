@@ -1,0 +1,40 @@
+chat-format: "&a<player>&7: &a<message>"
+announcements:
+  message-1:
+    - ""
+    - "&6&l[ESTORIA] &a&lDISCORD: &e&ldiscord.gg/EstoriaNetwork"
+    - ""
+  message-2:
+    - ""
+    - "&6&l[ESTORIA] &a&lOur Twitter: &e&ltwitter.com/Estoria.net"
+    - ""
+  message-3:
+    - ""
+    - "&6&l[ESTORIA] &a&lBuy server perks here: &e&lstore.estoria.net"
+    - ""
+  message-4:
+    - ""
+    - "&6&l[ESTORIA] &a&lNeed support? Create a ticket: &e&lestoria.net/tickets"
+    - ""
+  message-5:
+    - ""
+    - "&6&l[ESTORIA] &a&lWe accept crypto payments: &e&lcrypto.estoria.net"
+    - ""
+  message-6:
+    - ""
+    - "&6&l[ESTORIA] &a&lApply for staff here: &e&lestoria.net/applications"
+    - ""
+  message-7:
+    - ""
+    - "&6&l[Practice] &e&lWant to play with a friend? &e&lUse /duel"
+    - ""
+join-message:
+  - ""
+  - "&e&lNA Practice"
+  - " &71v1s, Parties, Events"
+  - " &715+ Games & Duels"
+  - ""
+  - " &a&l● &r&aTo duel a friend, do: &e/duel [their name]&a."
+  - " &a&l● &r&aTo quick play, &eright click with your sword&a."
+  - " &a&l● &r&aTo edit a kit, &eright click with your book&a."
+  - ""

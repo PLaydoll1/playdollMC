@@ -1,0 +1,28 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "zBl4cklist",
+      "uniqueId": "3fb41841-af3b-3c9a-8f33-efa46be006f6"
+    },
+    "time": 1717983182426,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/1fxI8FHhVj"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "zBl4cklist",
+      "uniqueId": "3fb41841-af3b-3c9a-8f33-efa46be006f6"
+    },
+    "time": 1717983177391,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/4pYb0muOpA"
+    }
+  }
+]

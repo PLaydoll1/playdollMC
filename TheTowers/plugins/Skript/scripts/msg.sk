@@ -1,0 +1,57 @@
+################################################
+#                                              #
+#                JuancJMF! v 0.1               #
+#             play.gladiuspvp.com              #
+#                                              #
+################################################
+
+command /msg [<player>] [<text>]:
+	trigger:
+		if arg 1 is set:
+			if arg 2 is set:
+				message "&eHas enviado un mensaje privado a &b%arg 1%: &7%arg 2%" to player 
+				message "&b%player% &ete escribió un mensaje privado: &7%arg 2%" to arg 1 
+			else if arg 2 is not set:
+				message "&c/Msg (destinario) (mensaje)."
+		else if arg 1 is not set:
+			message "&c/Msg (destinario) (mensaje)."
+command /tell [<player>] [<text>]:
+	trigger:
+		if arg 1 is set:
+			if arg 2 is set:
+				message "&eHas enviado un mensaje privado a &b%arg 1%: &7%arg 2%" to player 
+				message "&b%player% &ete escribió un mensaje privado: &7%arg 2%" to arg 1 
+			else if arg 2 is not set:
+				message "&c/Msg (destinario) (mensaje)."
+		else if arg 1 is not set:
+			message "&cUse /msg <Player> <Msg>"
+command /w [<player>] [<text>]:
+	trigger:
+		if arg 1 is set:
+			if arg 2 is set:
+				message "&eHas enviado un mensaje privado a &b%arg 1%: &7%arg 2%" to player 
+				message "&b%player% &ete escribió un mensaje privado: &7%arg 2%" to arg 1 
+			else if arg 2 is not set:
+				message "&c/Msg (destinario) (mensaje)."
+		else if arg 1 is not set:
+			message "&c/Msg (destinario) (mensaje)."
+command /m [<player>] [<text>]:
+	trigger:
+		if arg 1 is set:
+			if arg 2 is set:
+				message "&eHas enviado un mensaje privado a &b%arg 1%: &7%arg 2%" to player 
+				message "&b%player% &ete escribió un mensaje privado: &7%arg 2%" to arg 1 
+			else if arg 2 is not set:
+				message "&c/Msg (destinario) (mensaje)."
+		else if arg 1 is not set:
+			message "&c/Msg (destinario) (mensaje)."
+command /pm [<player>] [<text>]:
+	trigger:
+		if arg 1 is set:
+			if arg 2 is set:
+				message "&eHas enviado un mensaje privado a &b%arg 1%: &7%arg 2%" to player 
+				message "&b%player% &ete escribió un mensaje privado: &7%arg 2%" to arg 1 
+			else if arg 2 is not set:
+				message "&c/Msg (destinario) (mensaje)."
+		else if arg 1 is not set:
+			message "&c/Msg (destinario) (mensaje)."

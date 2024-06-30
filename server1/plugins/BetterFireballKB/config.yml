@@ -1,0 +1,14 @@
+#currently doesn't work
+explosion-yield: 0.0
+#set to negative cuz frost tnt damage is 4: therefore -3 will make the damage 1
+custom-tnt-damage: 0.0
+#recommended set to 2 this has been implemented due to yield not working
+#this is for endstone only any other block will break if u add it to frost config
+block-removal-radius: 0.0
+#reduces the tnt KB but only on ground to prevent insane flyouts and annoying kb
+ground-tnt-kb-reduction: 0.5
+#frost fireball y kb is inconsistent
+#so i rewrote fireball kb entirely
+#this will always be 100% consistent
+fireball-vert-boost: 1.2
+fireball-hor-boost: 1.8

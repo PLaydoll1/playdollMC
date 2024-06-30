@@ -1,0 +1,72 @@
+#
+#
+#LLLLLLLLLLL                                                   kkkkkkkk                                  BBBBBBBBBBBBBBBBB   lllllll                                      kkkkkkkk           
+#L:::::::::L                                                   k::::::k                                  B::::::::::::::::B  l:::::l                                      k::::::k           
+#L:::::::::L                                                   k::::::k                                  B::::::BBBBBB:::::B l:::::l                                      k::::::k           
+#LL:::::::LL                                                   k::::::k                                  BB:::::B     B:::::Bl:::::l                                      k::::::k           
+#  L:::::L               uuuuuu    uuuuuu      cccccccccccccccc k:::::k    kkkkkkkyyyyyyy           yyyyyyyB::::B     B:::::B l::::l    ooooooooooo       cccccccccccccccc k:::::k    kkkkkkk
+#  L:::::L               u::::u    u::::u    cc:::::::::::::::c k:::::k   k:::::k  y:::::y         y:::::y B::::B     B:::::B l::::l  oo:::::::::::oo   cc:::::::::::::::c k:::::k   k:::::k 
+#  L:::::L               u::::u    u::::u   c:::::::::::::::::c k:::::k  k:::::k    y:::::y       y:::::y  B::::BBBBBB:::::B  l::::l o:::::::::::::::o c:::::::::::::::::c k:::::k  k:::::k  
+#  L:::::L               u::::u    u::::u  c:::::::cccccc:::::c k:::::k k:::::k      y:::::y     y:::::y   B:::::::::::::BB   l::::l o:::::ooooo:::::oc:::::::cccccc:::::c k:::::k k:::::k   
+#  L:::::L               u::::u    u::::u  c::::::c     ccccccc k::::::k:::::k        y:::::y   y:::::y    B::::BBBBBB:::::B  l::::l o::::o     o::::oc::::::c     ccccccc k::::::k:::::k    
+#  L:::::L               u::::u    u::::u  c:::::c              k:::::::::::k          y:::::y y:::::y     B::::B     B:::::B l::::l o::::o     o::::oc:::::c              k:::::::::::k     
+#  L:::::L               u::::u    u::::u  c:::::c              k:::::::::::k           y:::::y:::::y      B::::B     B:::::B l::::l o::::o     o::::oc:::::c              k:::::::::::k     
+#  L:::::L         LLLLLLu:::::uuuu:::::u  c::::::c     ccccccc k::::::k:::::k           y:::::::::y       B::::B     B:::::B l::::l o::::o     o::::oc::::::c     ccccccc k::::::k:::::k    
+#LL:::::::LLLLLLLLL:::::Lu:::::::::::::::uuc:::::::cccccc:::::ck::::::k k:::::k           y:::::::y      BB:::::BBBBBB::::::Bl::::::lo:::::ooooo:::::oc:::::::cccccc:::::ck::::::k k:::::k   
+#L::::::::::::::::::::::L u:::::::::::::::u c:::::::::::::::::ck::::::k  k:::::k           y:::::y       B:::::::::::::::::B l::::::lo:::::::::::::::o c:::::::::::::::::ck::::::k  k:::::k  
+#L::::::::::::::::::::::L  uu::::::::uu:::u  cc:::::::::::::::ck::::::k   k:::::k         y:::::y        B::::::::::::::::B  l::::::l oo:::::::::::oo   cc:::::::::::::::ck::::::k   k:::::k 
+#LLLLLLLLLLLLLLLLLLLLLLLL    uuuuuuuu  uuuu    cccccccccccccccckkkkkkkk    kkkkkkk       y:::::y         BBBBBBBBBBBBBBBBB   llllllll   ooooooooooo       cccccccccccccccckkkkkkkk    kkkkkkk
+#                                                                                       y:::::y                                                                                              
+#                                                                                      y:::::y                                                                                               
+#                                                                                     y:::::y                                                                                                
+#                                                                                    y:::::y                                                                                                 
+#                                                                                   yyyyyyy                                                                                                  
+#
+# Author: xXZockerLPXx
+# Version: 2.4.7-BETA
+#
+# You can always download the latest version here:
+#            http://bit.ly/1JNEDcS
+#
+# Color Codes:
+# https://bit.ly/2GKhwai
+#
+#
+SchematicPath: 'plugins/LuckyBlock/schematics/'
+Crafting:
+    Enable: true
+noAmount: 10
+Update:
+    Enable: true
+    onInstallType: RELOAD
+Message:
+    Prefix: '[&eLuckyBlock&f] '
+    Reload: 'Reload the &6config.yml &fand &6blocks.json&f...'
+    notPlayer: 'You must be a player!'
+    notFoundCommand: 'This command was not found!'
+    noPermission: '&cNo Permission!'
+    errorBlock: '&aYou have received a new block.'
+    Commands:
+        help: '&a- /lb [<help>] &fView the commands'
+        give: '&a- /lb give [<Player>] [<Amount>] &fGiving the blocks'
+        reload: '&a- /lb reload &fReload the config.yml and blocks.json'
+        checkBlocks: '&a- /lb checkblocks &fChecking the files'
+        update: '&a- /lb update <check | changelog | install> &fCheck of updates'
+    GiveBlock:
+        normal: 'You have received a block.'
+        amount: 'You have received &6%amount% &fblocks.'
+        notFoundPlayer: 'The player &6%target% &fwas not found.'
+        noNumber: '&6%number% &fmust be a number.'
+        givePlayer: 'You gave &6%target% a block.'
+        giveTarget: 'You got a block from &6%player%.'
+        givePlayerAmount: 'You gave &6%target% %amount% &fblocks.'
+        giveTargetAmount: 'You get &6%amount% &ffrom &6%player%.'
+    WorldEdit:
+        notInstalled: '&cWorldEdit was not found!'
+        installed: '&aWorldEdit found.'
+    Block:
+        displayName: '&6LuckyBlock'
+        lore: '&aThis block gives you random items when you dismantle it!'
+    CheckBlocks:
+        noErrors: '&aNo errors found!'
+        errors: '&c%amount% faults were found!'

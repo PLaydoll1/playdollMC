@@ -1,0 +1,79 @@
+# Default plugins are Phoenix, Quark, Azeroth, Bolt, pxStaff, pxFriends, pxCosmetics, pxDiscord, pxLevels, pxQueue, pxBasic
+# Here are all the plugins, if a plugin isn't present here then simply follow this format
+# 
+# PLUGINS: (If it's a plugin)
+#  PLUGIN-NAME:
+#    ENABLED: true
+#    VERSION: autoupdate
+# 
+# ADDONS: (If it's an addon)
+#  ADDON-NAME:
+#    ENABLED: true
+#    VERSION: autoupdate
+
+PLUGINS:
+  # ⚡ Phoenix Network Core ⚡
+  # An optimized and user-friendly network core packed with features.
+  # Available at: https://refinedev.xyz/resources/phoenix.3/
+  Phoenix:
+    ENABLED: true
+    VERSION: autoupdate
+  
+  # ⚡ Bolt Practice Core ⚡
+  # A feature packed, easy-to-use and optimized Practice Plugin.
+  # Available at: https://refinedev.xyz/resources/bolt.8/
+  Bolt:
+    ENABLED: true
+    VERSION: WAVEMC-BETA
+  
+  # ⚡ Azeroth Soup Core ⚡
+  # A unique take on SoupPvP with custom abilities and kits
+  # Available at: https://refinedev.xyz/resources/azeroth.16/
+  Azeroth:
+    ENABLED: false
+    VERSION: autoupdate
+  
+  # ⚡ Apollo Anti-Cheat ⚡
+  # An extremely affordable solution to cheaters and hackers
+  # Available at: https://refinedev.xyz/resources/apollo.17/
+  Apollo:
+    ENABLED: false
+    VERSION: autoupdate
+  
+  # ⚡  Zephyr FFA Core ⚡
+  # The all-in-one FFA plugin to suit your server needs
+  # Available at: https://refinedev.xyz/resources/zephyr.18/
+  Zephyr:
+    ENABLED: false
+    VERSION: autoupdate
+  
+  # ⚡  Hunts Plugin ⚡
+  # Make your server fun by adding head hunts to your lobby
+  # Available at: https://refinedev.xyz/resources/hunts.26/
+  Hunts:
+    ENABLED: false
+    VERSION: autoupdate
+
+# Addons to the above-mentioned plugins
+ADDONS:
+  Quark:
+    ENABLED: false
+    VERSION: autoupdate
+  pxStaff:
+    ENABLED: true
+    VERSION: autoupdate
+  pxLevels:
+    ENABLED: false
+    VERSION: autoupdate
+  pxFriends:
+    ENABLED: true
+    VERSION: autoupdate
+  pxBasic:
+    ENABLED: true
+    VERSION: autoupdate
+  pxCosmetics:
+    ENABLED: false
+    VERSION: autoupdate
+  pxDiscord:
+    ENABLED: false
+    VERSION: autoupdate

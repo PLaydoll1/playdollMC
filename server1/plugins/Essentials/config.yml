@@ -1,0 +1,6 @@
+features:
+  announcements: true
+  tablist: false
+  chat-format: true
+  join-message: true
+  send-announcements-every: 1200

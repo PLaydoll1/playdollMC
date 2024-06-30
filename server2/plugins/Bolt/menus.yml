@@ -1,0 +1,1494 @@
+# This is the main menu configuration file for Bolt.
+# The only menus that are configurable are one's accessible by players, not Admins.
+# So menus like Arena manage or Kit manage are not configurable, since you won't need to.
+# You need help with the configuration or have any questions related to Bolt?
+# Join us in our Discord: https://dsc.gg/refine
+# null
+# NOTE: All Material IDs are supported from 1.8x-1.20.x. Recommended: https://minecraftitemids.com/
+
+# This is the global menu configuration section.
+# These configurations apply to all menus and are for the buttons that are built-in.
+GLOBAL:
+  PLACEHOLDER-BUTTON:
+    NAME: ""
+    MATERIAL: "LIGHT_GRAY_STAINED_GLASS_PANE"
+    DURABILITY: 0
+  BORDER-BUTTON:
+    NAME: ""
+    MATERIAL: "LIGHT_GRAY_STAINED_GLASS_PANE"
+    DURABILITY: 0
+  NEXT-PAGE-BUTTON:
+    NAME: "&aNext Page &7(<page>/<pages>)"
+    MATERIAL: "PLAYER_HEAD"
+    DURABILITY: 0
+    LORE:
+      - ""
+      - "&7Right click to view all pages."
+  PREVIOUS-PAGE-BUTTON:
+    NAME: "&aPrevious Page &7(<page>/<pages>)"
+    MATERIAL: "PLAYER_HEAD"
+    DURABILITY: 0
+    LORE:
+      - ""
+      - "&7Right click to view all pages."
+  BACK-BUTTON:
+    NAME: "&aBack"
+    MATERIAL: "PLAYER_HEAD"
+    DURABILITY: 0
+    LORE:
+      - ""
+      - "&eClick here to return."
+  CONFIRMATION-BUTTON:
+    NAME: "&aConfirm"
+    MATERIAL: "LIME_WOOL"
+    DURABILITY: 0
+    LORE: []
+  CANCEL-BUTTON:
+    NAME: "&aCancel"
+    MATERIAL: "RED_WOOL"
+    DURABILITY: 0
+    LORE: []
+  BOOLEAN-TRAIT-BUTTON:
+    ENABLED:
+      NAME: "&a&lEdit <trait>"
+      MATERIAL: "LIME_WOOL"
+      DURABILITY: 0
+      LORE:
+        - " &7* &fCurrent: &aOn"
+        - ""
+        - " &a[Click to toggle]"
+    DISABLED:
+      NAME: "&a&lEdit <trait>"
+      MATERIAL: "RED_WOOL"
+      DURABILITY: 0
+      LORE:
+        - " &7* &fCurrent: &aOff"
+        - ""
+        - " &a[Click to toggle]"
+  INTEGER-TRAIT-BUTTON:
+    NAME: "&a&lEdit <trait>"
+    MATERIAL: "GHAST_TEAR"
+    DURABILITY: 0
+    LORE:
+      - " &7* &fCurrent: &a<value>"
+      - ""
+      - " &7Left-Click - To increase by 1"
+      - " &7Right-Click - To decrease by 1"
+      - ""
+      - " &7Shit Left-Click - To increase by 10"
+      - " &7Shift Right-Click - To decrease by 10"
+      - ""
+      - " &a[Click to edit]"
+  DOUBLE-TRAIT-BUTTON:
+    NAME: "&a&lEdit <trait>"
+    MATERIAL: "GHAST_TEAR"
+    DURABILITY: 0
+    LORE:
+      - " &7* &fCurrent: &a<value>"
+      - ""
+      - " &7Left-Click - To increase by 0.1"
+      - " &7Right-Click - To decrease by 0.1"
+      - ""
+      - " &7Shit Left-Click - To increase by 0.5"
+      - " &7Shift Right-Click - To decrease by 0.5"
+      - ""
+      - " &a[Click to edit]"
+GENERAL-MENUS:
+  SETTINGS-MENU:
+    TITLE: "&7Profile Settings"
+    VANILLA-TAB:
+      NAME: "&e&lVanilla Tablist"
+      MATERIAL: "WATCH"
+      DURABILITY: 0
+      SLOT: 0
+      ENABLED-LORE:
+        - "&7Would you like to see modern"
+        - "&7or vanilla tab?"
+        - ""
+        - "&a■ &fEnabled"
+        - "&7■ &fDisabled"
+        - " "
+        - "&fClick to disable."
+      DISABLED-LORE:
+        - "&7Would you like to see modern"
+        - "&7or vanilla tab?"
+        - ""
+        - "&7■ &fEnabled"
+        - "&a■ &fDisabled"
+        - " "
+        - "&fClick to enable."
+    DUEL-REQUESTS:
+      NAME: "&e&lDuel Requests"
+      MATERIAL: "DIAMOND_SWORD"
+      DURABILITY: 0
+      SLOT: 1
+      ENABLED-LORE:
+        - "&7Would you like to receive duel"
+        - "&7from other players?"
+        - ""
+        - "&a■ &fEnabled"
+        - "&7■ &fDisabled"
+        - " "
+        - "&fClick to disable."
+      DISABLED-LORE:
+        - "&7Would you like to receive duel"
+        - "&7from other players?"
+        - ""
+        - "&7■ &fEnabled"
+        - "&a■ &fDisabled"
+        - " "
+        - "&fClick to enable."
+    SPECTATORS:
+      NAME: "&e&lAllow Spectators"
+      MATERIAL: "ITEM_FRAME"
+      DURABILITY: 0
+      SLOT: 2
+      ENABLED-LORE:
+        - "&7Would you like other players to"
+        - "&7be able to spectate your matches?"
+        - ""
+        - "&a■ &fEnabled"
+        - "&7■ &fDisabled"
+        - " "
+        - "&fClick to disable."
+      DISABLED-LORE:
+        - "&7Would you like other players to"
+        - "&7be able to spectate your matches?"
+        - ""
+        - "&7■ &fEnabled"
+        - "&a■ &fDisabled"
+        - " "
+        - "&fClick to enable."
+    SIDEBAR-VISIBILITY:
+      NAME: "&e&lSidebar Visibility"
+      MATERIAL: "BOOK"
+      DURABILITY: 0
+      SLOT: 3
+      ENABLED-LORE:
+        - "&7Would you like to be able"
+        - "&7to view the sidebar?"
+        - ""
+        - "&a■ &fEnabled"
+        - "&7■ &fDisabled"
+        - " "
+        - "&fClick to disable."
+      DISABLED-LORE:
+        - "&7Would you like to be able"
+        - "&7to view the sidebar?"
+        - ""
+        - "&7■ &fEnabled"
+        - "&a■ &fDisabled"
+        - " "
+        - "&fClick to enable."
+    TOURNAMENT-MESSAGES:
+      NAME: "&e&lTournament Messages"
+      MATERIAL: "SIGN"
+      DURABILITY: 0
+      SLOT: 4
+      ENABLED-LORE:
+        - "&7Would you like to see"
+        - "&7tournament messages?"
+        - ""
+        - "&a■ &fEnabled"
+        - "&7■ &fDisabled"
+        - " "
+        - "&fClick to disable."
+      DISABLED-LORE:
+        - "&7Would you like to see"
+        - "&7tournament messages?"
+        - ""
+        - "&7■ &fEnabled"
+        - "&a■ &fDisabled"
+        - " "
+        - "&fClick to enable."
+    PLAYER-VISIBILITY:
+      NAME: "&e&lPlayer Visibility"
+      MATERIAL: "EYE_OF_ENDER"
+      DURABILITY: 0
+      SLOT: 5
+      ENABLED-LORE:
+        - "&7Would you like to be able to"
+        - "&7see other players?"
+        - ""
+        - "&a■ &fEnabled"
+        - "&7■ &fDisabled"
+        - " "
+        - "&fClick to disable."
+      DISABLED-LORE:
+        - "&7Would you like to be able to"
+        - "&7see other players?"
+        - ""
+        - "&7■ &fEnabled"
+        - "&a■ &fDisabled"
+        - " "
+        - "&fClick to enable."
+    PING-FACTOR:
+      NAME: "&e&lPing Range"
+      MATERIAL: "LEVER"
+      DURABILITY: 0
+      SLOT: 6
+      LORE:
+        - "&7Would you like to enable ping difference limit"
+        - "&7between the players you queue with?"
+        - ""
+        - "&a■ &f<ping_fact_amount>"
+        - " "
+        - "&fClick to change."
+      NO-PERMISSION-LORE:
+        - "&7Would you like to enable ping difference limit"
+        - "&7between the players you queue with?"
+        - ""
+        - "&a■ &fUnrestricted"
+        - " "
+        - "&aNo permission."
+    DUEL-SOUNDS:
+      NAME: "&e&lDuel Sounds"
+      MATERIAL: "NOTE_BLOCK"
+      DURABILITY: 0
+      SLOT: 7
+      ENABLED-LORE:
+        - "&7Would you like to be able to hear duel"
+        - "&7sounds when someone sends a request?"
+        - ""
+        - "&a■ &fEnabled"
+        - "&7■ &fDisabled"
+        - " "
+        - "&fClick to disable."
+      DISABLED-LORE:
+        - "&7Would you like to be able to hear duel"
+        - "&7sounds when someone sends a request?"
+        - ""
+        - "&7■ &fEnabled"
+        - "&a■ &fDisabled"
+        - " "
+        - "&fClick to enable."
+    PLAY-AGAIN:
+      NAME: "&e&lPlay Again"
+      MATERIAL: "PAPER"
+      DURABILITY: 0
+      SLOT: 8
+      ENABLED-LORE:
+        - "&7Would you like to be able to use the"
+        - "&7play again item after a match?"
+        - ""
+        - "&a■ &fEnabled"
+        - "&7■ &fDisabled"
+        - " "
+        - "&fClick to disable."
+      DISABLED-LORE:
+        - "&7Would you like to be able to use the"
+        - "&7play again item after a match?"
+        - ""
+        - "&7■ &fEnabled"
+        - "&a■ &fDisabled"
+        - " "
+        - "&fClick to enable."
+    TIME:
+      NAME: "&e&lPlayer Time"
+      MATERIAL: "WATCH"
+      DURABILITY: 0
+      SLOT: 9
+      LORE:
+        - "&7What time of the day would"
+        - "&7you like to have?"
+        - ""
+        - "<toggled_day>■ &fDay"
+        - "<toggled_sunset>■ &fSunset"
+        - "<toggled_night>■ &fNight"
+        - " "
+        - "&fClick to change."
+    ANIMATE-DEATH:
+      NAME: "&e&lDeath Animation"
+      MATERIAL: "ENCHANTED_BOOK"
+      DURABILITY: 0
+      SLOT: 10
+      ENABLED-LORE:
+        - "&7Would you like to enable death animation"
+        - "&7for the targets that you kill?"
+        - ""
+        - "&a■ &fEnabled"
+        - "&7■ &fDisabled"
+        - " "
+        - "&fClick to disable."
+      DISABLED-LORE:
+        - "&7Would you like to enable death animation"
+        - "&7for the targets that you kill?"
+        - ""
+        - "&7■ &fEnabled"
+        - "&a■ &fDisabled"
+        - " "
+        - "&fClick to enable."
+      NO-PERMISSION-LORE:
+        - "&7Would you like to enable death animation"
+        - "&7for the targets that you kill?"
+        - ""
+        - "&7■ &fEnabled"
+        - "&7■ &fDisabled"
+        - " "
+        - "&aNo permission."
+    DROP-ITEMS:
+      NAME: "&e&lDrop Items"
+      MATERIAL: "GLASS_BOTTLE"
+      DURABILITY: 0
+      SLOT: 11
+      ENABLED-LORE:
+        - "&7Would you like to enable item drops"
+        - "&7for the targets that you kill? (Only for Solo)"
+        - ""
+        - "&a■ &fEnabled"
+        - "&7■ &fDisabled"
+        - " "
+        - "&fClick to disable."
+      DISABLED-LORE:
+        - "&7Would you like to enable item drops"
+        - "&7for the targets that you kill? (Only for Solo)"
+        - ""
+        - "&7■ &fEnabled"
+        - "&a■ &fDisabled"
+        - " "
+        - "&fClick to enable."
+      NO-PERMISSION-LORE:
+        - "&7Would you like to enable item drops"
+        - "&7for the targets that you kill? (Only for Solo)"
+        - ""
+        - "&7■ &fEnabled"
+        - "&7■ &fDisabled"
+        - " "
+        - "&aNo permission."
+    FLY-MODE:
+      NAME: "&e&lFly Mode"
+      MATERIAL: "FEATHER"
+      DURABILITY: 0
+      SLOT: 12
+      ENABLED-LORE:
+        - "&7Would you like to start flying when"
+        - "&7a solo match ends?"
+        - ""
+        - "&a■ &fEnabled"
+        - "&7■ &fDisabled"
+        - " "
+        - "&fClick to disable."
+      DISABLED-LORE:
+        - "&7Would you like to start flying when"
+        - "&7a solo match ends?"
+        - ""
+        - "&7■ &fEnabled"
+        - "&a■ &fDisabled"
+        - " "
+        - "&fClick to enable."
+      NO-PERMISSION-LORE:
+        - "&7Would you like to start flying when"
+        - "&7a solo match ends?"
+        - ""
+        - "&7■ &fEnabled"
+        - "&7■ &fDisabled"
+        - " "
+        - "&aNo permission."
+    CLEAR-INVENTORY:
+      NAME: "&e&lClear Inventory"
+      MATERIAL: "CHEST"
+      DURABILITY: 0
+      SLOT: 13
+      ENABLED-LORE:
+        - "&7Would you like to clear your inventory"
+        - "&7when a solo match ends?"
+        - ""
+        - "&a■ &fEnabled"
+        - "&7■ &fDisabled"
+        - " "
+        - "&fClick to disable."
+      DISABLED-LORE:
+        - "&7Would you like to clear your inventory"
+        - "&7when a solo match ends?"
+        - ""
+        - "&7■ &fEnabled"
+        - "&a■ &fDisabled"
+        - " "
+        - "&fClick to enable."
+      NO-PERMISSION-LORE:
+        - "&7Would you like to clear your inventory"
+        - "&7when a solo match ends?"
+        - ""
+        - "&7■ &fEnabled"
+        - "&7■ &fDisabled"
+        - " "
+        - "&aNo permission."
+    PARTY-REQUESTS:
+      NAME: "&e&lParty Requests"
+      MATERIAL: "ITEM_FRAME"
+      DURABILITY: 0
+      SLOT: 14
+      ENABLED-LORE:
+        - "&7Would you like to receive party"
+        - "&7from other players?"
+        - ""
+        - "&a■ &fEnabled"
+        - "&7■ &fDisabled"
+        - " "
+        - "&fClick to disable."
+      DISABLED-LORE:
+        - "&7Would you like to receive party"
+        - "&7from other players?"
+        - ""
+        - "&7■ &fEnabled"
+        - "&a■ &fDisabled"
+        - " "
+        - "&fClick to enable."
+    SPECTATOR-MESSAGES:
+      NAME: "&e&lSpectator Messages"
+      MATERIAL: "WRITABLE_BOOK"
+      DURABILITY: 0
+      SLOT: 15
+      ENABLED-LORE:
+        - "&7Would you like to receive spectator"
+        - "&7join and leave messages?"
+        - ""
+        - "&a■ &fEnabled"
+        - "&7■ &fDisabled"
+        - " "
+        - "&fClick to disable."
+      DISABLED-LORE:
+        - "&7Would you like to receive spectator"
+        - "&7join and leave messages?"
+        - ""
+        - "&7■ &fEnabled"
+        - "&a■ &fDisabled"
+        - " "
+        - "&fClick to enable."
+    PLAY-AGAIN-TYPE:
+      NAME: "&e&lPlay-Again Type"
+      MATERIAL: "EMERALD"
+      DURABILITY: 0
+      SLOT: 16
+      ENABLED-LORE:
+        - "&7Would you like play-again to"
+        - "&7rematch the opponent when possible?"
+        - ""
+        - "&a■ &fRematch-Possible"
+        - "&7■ &fQueue-Only"
+        - " "
+        - "&fClick to disable."
+      DISABLED-LORE:
+        - "&7Would you like play-again to"
+        - "&7rematch the opponent when possible?"
+        - ""
+        - "&7■ &fRematch-Possible"
+        - "&a■ &fQueue-Only"
+        - " "
+        - "&fClick to enable."
+    PHOENIX-SETTINGS-NAME: "&aPractice Settings"
+    PHOENIX-SETTINGS-LORE:
+      - "&fHere you can manage your practice"
+      - "&fsettings and preferences."
+      - ""
+      - "&eClick to open."
+    PHOENIX-SETTINGS:
+      MATERIAL: "GOLDEN_SWORD"
+      DURABILITY: 0
+      SLOT: 17
+  PROFILE-MENU:
+    TITLE: "&7Profile Menu (<player>)"
+    SIZE: 27
+    BUTTONS:
+      STATISTICS:
+        NAME: "&a&lStatistics"
+        ENABLED: true
+        MATERIAL: "EMERALD"
+        DURABILITY: 0
+        SLOT: 11
+        LORE:
+          - "&7View your profile's statistics"
+          - "&7or view top 10 leaderboards for each kit."
+          - ""
+          - "&eClick to view statistics."
+      HISTORY:
+        ENABLED: true
+        NAME: "&a&lMatch History"
+        MATERIAL: "PAPER"
+        DURABILITY: 0
+        SLOT: 12
+        LORE:
+          - "&7View your profile's match history."
+          - "&7You can view match stats and inventories"
+          - "&7from each of your match history."
+          - ""
+          - "&eClick to view match history."
+      DIVISIONS:
+        ENABLED: true
+        NAME: "&a&lDivisions"
+        MATERIAL: "GOLD_SWORD"
+        DURABILITY: 0
+        SLOT: 13
+        LORE:
+          - "&7View your all divisions achievable."
+          - "&7You can view how much ELO it will take you"
+          - "&7to rank up and what is your current division."
+          - ""
+          - "&eClick to view divisions."
+      SETTINGS:
+        ENABLED: true
+        NAME: "&a&lProfile Settings"
+        MATERIAL: "ANVIL"
+        DURABILITY: 0
+        SLOT: 14
+        LORE:
+          - "&7View your profile's settings."
+          - "&7You can modify each and individual setting."
+          - ""
+          - "&eClick to view settings."
+      COSMETICS:
+        ENABLED: true
+        NAME: "&a&lProfile Cosmetics"
+        MATERIAL: "FIREWORK"
+        DURABILITY: 0
+        SLOT: 15
+        LORE:
+          - "&7View your profile's cosmetics."
+          - "&7You can modify and select cosmetics."
+          - ""
+          - "&eClick to view cosmetics."
+  COSMETICS-MENU:
+    TITLE: "&7Cosmetics Type"
+    SIZE: 27
+    BUTTONS:
+      KILL-MESSAGES:
+        NAME: "&a&lKill Messages"
+        MATERIAL: "CHEST"
+        DURABILITY: 0
+        SLOT: 10
+        LORE:
+          - ""
+          - "&7Spice up your kill messages with an interesting, funny"
+          - "&7and witty variety of kill messages to pick from."
+          - ""
+          - "&7■ &fUnlocked: &a<unlocked> / <total>"
+          - "&7■ &fSelected: &a<selected>"
+          - ""
+          - "&eClick to browse kill messages"
+      KILL-EFFECTS:
+        NAME: "&a&lKill Effects"
+        MATERIAL: "BLAZE_ROD"
+        DURABILITY: 0
+        SLOT: 12
+        LORE:
+          - ""
+          - "&7Make your kills interesting with a fun Kill Animation."
+          - ""
+          - "&7■ &fUnlocked: &a<unlocked> / <total>"
+          - "&7■ &fSelected: &a<selected>"
+          - ""
+          - "&eClick to browse kill effects"
+      PROJECTILE-TRAILS:
+        NAME: "&a&lProjectile Trails"
+        MATERIAL: "FIREWORK_STAR"
+        DURABILITY: 0
+        SLOT: 14
+        LORE:
+          - ""
+          - "&7Make your projectiles have an amazing trail follow them"
+          - "&7as they move through their trajectory."
+          - ""
+          - "&7■ &fUnlocked: &a<unlocked> / <total>"
+          - "&7■ &fSelected: &a<selected>"
+          - ""
+          - "&eClick to browse projectile trails"
+      VICTORY-EFFECTS:
+        NAME: "&a&lVictory Effects"
+        BEACON: "BEACON"
+        DURABILITY: 0
+        SLOT: 16
+        LORE:
+          - ""
+          - "&7Play selected Victory Dance effect"
+          - "&7to celebrate your victory in style!"
+          - ""
+          - "&a&lComing Soon..."
+  KILL-MESSAGES-MENU:
+    TITLE: "&7Cosmetics » Kill Messages"
+    SELECT-BUTTON:
+      NAME: "&a&l<name><selected>"
+      SELECTED: " &f(Selected)"
+      FORMAT: " &a• &f<message>"
+      LORE:
+        - ""
+        - "&a&lIncluded"
+        - "<messages>"
+        - "&7"
+        - "&eClick to select."
+      NO-PERMISSION-LORE:
+        - ""
+        - "&a&lIncluded"
+        - "<messages>"
+        - "&7"
+        - "&aNo permission."
+    RESET-BUTTON:
+      NAME: "&a&lReset Kill Message"
+      MATERIAL: "PLAYER_HEAD"
+      SLOT: 49
+      LORE:
+        - ""
+        - "&7■ &fSelected: &a<selected>"
+        - ""
+        - "&eClick to reset."
+  KILL-EFFECTS-MENU:
+    TITLE: "&7Cosmetics » Kill Effects"
+    SELECT-BUTTON:
+      NAME: "&a&l<name><selected>"
+      SELECTED: " &f(Selected)"
+      LORE:
+        - ""
+        - "&eClick to select."
+      NO-PERMISSION-LORE:
+        - ""
+        - "&aNo permission."
+    RESET-BUTTON:
+      NAME: "&a&lReset Kill Effect"
+      MATERIAL: "PLAYER_HEAD"
+      SLOT: 49
+      LORE:
+        - ""
+        - "&7■ &fSelected: &a<selected>"
+        - ""
+        - "&eClick to reset."
+  PROJECTILE-TRAILS-MENU:
+    TITLE: "&7Cosmetics » Projectile Trails"
+    SELECT-BUTTON:
+      NAME: "&a&l<name><selected>"
+      SELECTED: " &f(Selected)"
+      LORE:
+        - ""
+        - "&eClick to select."
+      NO-PERMISSION-LORE:
+        - ""
+        - "&aNo permission."
+    RESET-BUTTON:
+      NAME: "&a&lReset Projectile Trail"
+      MATERIAL: "PLAYER_HEAD"
+      SLOT: 49
+      LORE:
+        - ""
+        - "&7■ &fSelected: &a<selected>"
+        - ""
+        - "&eClick to reset."
+QUEUE-MENUS:
+  SOLO-MENU:
+    TITLE: "<type> » Solo"
+    SIZE: -1
+    KIT-NAME: "&a<kit>"
+    UNRANKED-LORE:
+      - ""
+      - "&fPlaying: &a<playing>"
+      - "&fQueuing: &a<queued>"
+      - ""
+      - "&fYour Win Streak: &a<winstreak>"
+      - "&fHighest Win Streak: &a<highestWinstreak>"
+      - ""
+      - " &f1. &7<player1> &f- &a<winstreak1>"
+      - " &f2. &7<player2> &f- &a<winstreak2>"
+      - " &f3. &7<player3> &f- &a<winstreak3>"
+      - ""
+      - "&eClick to play!"
+    RANKED-LORE:
+      - ""
+      - "&fPlaying: &a<playing>"
+      - "&fQueuing: &a<queued>"
+      - ""
+      - "&fYour Elo: &a<elo>"
+      - "&fYour Win Streak: &a<winstreak> "
+      - "&fHighest Win Streak: &a<highestWinstreak>"
+      - ""
+      - " &f1. &7<player1> &f- &a<elo1>"
+      - " &f2. &7<player2> &f- &a<elo2>"
+      - " &f3. &7<player3> &f- &a<elo3>"
+      - ""
+      - "&eClick to play!"
+  DUO-MENU:
+    TITLE: "<type> » Duo"
+    KIT-NAME: "&a<kit>"
+    UNRANKED-LORE:
+      - ""
+      - "&fPlaying: &a<playing>"
+      - "&fQueuing: &a<queued>"
+      - ""
+      - "&fYour Win Streak: &a<winstreak>"
+      - "&fHighest Win Streak: &a<highestWinstreak>"
+      - ""
+      - " &f1. &7<player1> &f- &a<winstreak1>"
+      - " &f2. &7<player2> &f- &a<winstreak2>"
+      - " &f3. &7<player3> &f- &a<winstreak3>"
+      - ""
+      - "&eClick to play!"
+    RANKED-LORE:
+      - ""
+      - "&fPlaying: &a<playing>"
+      - "&fQueuing: &a<queued>"
+      - ""
+      - "&fYour Elo: &a<elo>"
+      - "&fYour Win Streak: &a<winstreak>"
+      - "&fHighest Win Streak: &a<highestWinstreak>"
+      - ""
+      - " &f1. &7<player1> &f- &a<elo1>"
+      - " &f2. &7<player2> &f- &a<elo2>"
+      - " &f3. &7<player3> &f- &a<elo3>"
+      - ""
+      - "&eClick to play!"
+  QUEUE-TYPE:
+    TITLE: "&7Select a type of Queue"
+    SIZE: 27
+    SOLO-TYPE:
+      UNRANKED-NAME: "&aQueue Unranked"
+      UNRANKED-MATERIAL: "IRON_SWORD"
+      UNRANKED-DURABILITY: 0
+      UNRANKED-SLOT: 12
+      UNRANKED-LORE:
+        - ""
+        - "&7Casual 1v1 Matches"
+        - "&7with no loss penalty!"
+        - ""
+        - "&eClick to play!"
+      RANKED-NAME: "&bQueue Ranked"
+      RANKED-DURABILITY: 0
+      RANKED-SLOT: 14
+      RANKED-LORE:
+        - ""
+        - "&7Competitive 1v1 Matches"
+        - "&7with a loss penalty!"
+        - ""
+        - "&eClick to play!"
+    DUO-TYPE:
+      UNRANKED-NAME: "&aQueue Unranked"
+      UNRANKED-MATERIAL: "IRON_SWORD"
+      UNRANKED-DURABILITY: 0
+      UNRANKED-SLOT: 12
+      UNRANKED-LORE:
+        - ""
+        - "&7Casual 1v1 Matches"
+        - "&7with no loss penalty!"
+        - ""
+        - "&eClick to play!"
+      RANKED-NAME: "&bQueue Ranked"
+      RANKED-MATERIAL: "DIAMOND_SWORD"
+      RANKED-DURABILITY: 0
+      RANKED-SLOT: 14
+      RANKED-LORE:
+        - ""
+        - "&7Competitive 1v1 Matches"
+        - "&7with a loss penalty!"
+        - ""
+        - "&eClick to play!"
+  SOLO-TYPE:
+    RANKED-MATERIAL: "DIAMOND_SWORD"
+  RANDOM-QUEUE-BUTTON:
+    ENABLED: true
+    SLOT: 49
+    NAME: "&a&lRandom Queue"
+    MATERIAL: "EYE_OF_ENDER"
+    DURABILITY: 0
+    LORE:
+      - ""
+      - "&7Click to join a random queue."
+MATCH-MENUS:
+  MATCH-HISTORY:
+    TITLE: "Match History » <player>"
+    
+    # This size is only for when history is empty
+    SIZE: 27
+    
+    # Uses kit's icon instead of the material below
+    KIT-DISPLAY-ICON: true
+    MATERIAL: "BOOK"
+    NAME: "&a&lMatch #<id> &7┃ <status>"
+    LORE:
+      - "&8<createdAt>"
+      - ""
+      - "&fWinner: &a<winner>"
+      - "&fLoser: &a<loser>"
+      - ""
+      - "&fType: &a<type>"
+      - "&fKit: &a<kit>"
+      - "&fArena: &a<arena>"
+      - ""
+      - "&fLeft click to view match inventories."
+      - "<revertElo>"
+    STATUS-WON: "&a(Won)"
+    STATUS-LOST: "&a(Lost)"
+    WINNER-ELO: " &a(+<elo> ELO)"
+    LOSER-ELO: " &a(-<elo> ELO)"
+    POINTS: " &7(<points> Points)"
+    LIVES: " &7(<lives> Lives)"
+    REVERT-ELO: "&fMiddle click to revert elo changes"
+    NO-MATCHES:
+      MATERIAL: "REDSTONE_BLOCK"
+      DURABILITY: 0
+      NAME: "&a&lNo Matches Found"
+      SELF-LORE:
+        - ""
+        - "&7No matches could be found on your profile."
+        - "&7When you play a match it will be logged here."
+      OTHER-LORE:
+        - ""
+        - "&7No matches could be found on <player>'s profile."
+        - "&7When they play a match it will be logged here."
+      SLOT: 4
+  REVERT-HISTORY:
+    TITLE: "Revert Elo"
+    NAME: "&a&lRevert Elo"
+    LORE:
+      - ""
+      - "&7Are you sure you want to"
+      - "&7make the following changes:"
+      - ""
+      - "&f<winner> ELO&7: &a-<winnerEloChange>"
+      - "&f<loser> ELO&7: &a+<loserEloChange>"
+      - ""
+      - "&aLeft-Click to confirm stats changes."
+      - "&aRight-Click to cancel stats changes."
+  MATCH-INVENTORY:
+    TITLE: "Inventory » <player>"
+    NEXT-INVENTORY-BUTTON:
+      NAME: "&aNext Inventory"
+      MATERIAL: "LEVER"
+      DURABILITY: 0
+      LORE:
+        - " &7* &7Switch to &a<player> &7's inventory"
+    HEALTH-BUTTON:
+      NAME: "&aHealth: &f<health> &4❤"
+      MATERIAL: "PLAYER_HEAD"
+      DURABILITY: 0
+      LORE: []
+    HUNGER-BUTTON:
+      NAME: "&aHunger: &f<hunger>"
+      MATERIAL: "COOKED_BEEF"
+      DURABILITY: 0
+      LORE: []
+    POTION-EFFECTS-BUTTON:
+      NAME: "&aPotion Effects"
+      FORMAT: " &7* &a<effect> &7(<duration>)"
+      MATERIAL: "BREWING_STAND"
+      DURABILITY: 0
+      EFFECTS-LORE:
+        - ""
+        - "<effects>"
+      NO-EFFECTS-LORE:
+        - " &7* &7No potion effects."
+    POTIONS-BUTTON:
+      NAME: "&aHealth Potions"
+      MATERIAL: "SPLASH_POTION"
+      DURABILITY: 16421
+      LORE:
+        - ""
+        - " &7* &a<player> &fhad &a<count> &apotion(s) &fleft."
+    STATISTICS-BUTTON:
+      NAME: "&aStatistics"
+      MATERIAL: "PAPER"
+      DURABILITY: 0
+      LORE:
+        - ""
+        - " &7* &fNormal Hits: &a<totalHits>"
+        - " &7* &fBlocked Hits: &a<blockedHits>"
+        - " &7* &fLatest Combo: &a<totalCombos>"
+        - " &7* &fLongest Combo: &a<longestCombo>"
+        - " &7* &fPotions Thrown: &a<potionsThrown>"
+        - " &7* &fPotions Missed: &a<potionsMissed>"
+        - " &7* &fPotion Accuracy: &a<potionAccuracy>"
+SPECTATE-MENUS:
+  SPECTATE-MATCHES:
+    TITLE: "Spectate Matches"
+    PARTY-GAME-LORE:
+      - ""
+      - "&fType: &a<type>"
+      - "&fLadder: &a<kit>"
+      - "&fArena: &a<arena>"
+      - "&fSpectators: &a<spectators>"
+      - ""
+      - "&aClick to spectate!"
+    PARTY-HCT-LORE:
+      - ""
+      - "&fType: &aTeam Fights (HCF)"
+      - "&fLadder: &a<kit>"
+      - "&fArena: &a<arena>"
+      - "&fSpectators: &a<spectators>"
+      - ""
+      - "&aClick to spectate!"
+  PLAYERS-IN-MATCH:
+    TITLE: "Players In Match"
+    PLAYER-HEADS: true
+    ITEM: "PAPER"
+    ITEM-DAMAGE: 0
+    LORE: "&a<player>"
+    LORE-ALIVE:
+      - ""
+      - "&fHealth: &a<health> ❤"
+      - "&fHunger: &a<hunger>/20"
+      - ""
+      - "&aLeft click to teleport!"
+DIVISION-MENUS:
+  TITLE: "Divisions"
+  NAME: "<division> <current>"
+  CURRENT: " &a(Current)"
+  LORE:
+    - ""
+    - "&fRequired Elo: &a<elo>"
+  LORE-CURRENT:
+    - ""
+    - "&fRequired Elo: &a<elo>"
+    - ""
+    - "&a&oThis is your current division."
+PARTY-MENUS:
+  GAME-MENU:
+    TITLE: "Party » Games"
+    SIZE: 45
+    PARTY-SPLIT:
+      NAME: "&a&lParty Split"
+      MATERIAL: "DIAMOND_SWORD"
+      DURABILITY: 0
+      SLOT: 11
+      LORE:
+        - ""
+        - "&7Split your party into teams"
+        - "&7and battle it out in any gamemode!"
+        - ""
+        - "&aClick to play!"
+    PARTY-FFA:
+      NAME: "&a&lParty FFA"
+      MATERIAL: "GOLD_AXE"
+      DURABILITY: 0
+      SLOT: 13
+      LORE:
+        - ""
+        - "&7Start a free-for-all match"
+        - "&7with players in your party!"
+        - ""
+        - "&aClick to play!"
+    PARTY-TEAM-FIGHT:
+      NAME: "&a&lParty TeamFight"
+      MATERIAL: "BLAZE_POWDER"
+      DURABILITY: 0
+      SLOT: 15
+      LORE:
+        - ""
+        - "&7Fight it out in a split match with HCF"
+        - "&7pvp classes, the last team standing wins!"
+        - ""
+        - "&aClick to play!"
+    PARTY-DUEL:
+      NAME: "&a&lDuel Party"
+      MATERIAL: "COMPASS"
+      DURABILITY: 0
+      SLOT: 31
+      LORE:
+        - ""
+        - "&7Fight it out in a duel with another party"
+        - "&7until there is a last team standing."
+        - ""
+        - "&aClick to play!"
+  OTHER-PARTIES:
+    TITLE: "Party » Games » Duel"
+    SIZE: 45
+    PARTY-BUTTON:
+      NAME: "&a<leader>'s &fParty"
+      LORE:
+        - ""
+        - "&fLeader: &a<leader>"
+        - "&fSize: &a<size>"
+        - ""
+        - "&aMember List"
+        - "<list>"
+        - "<others>"
+        - ""
+        - "<duel_message>"
+      DUEL-MESSAGE: "&aClick to duel!"
+      BUSY-MESSAGE: "&aNot available!"
+      LIST-FORMAT: "&7■ &a<member>"
+      OTHER-PLAYERS: "&7&oand <count> others..."
+    NO-PARTIES:
+      NAME: "&a&lNo Parties Found"
+      MATERIAL: "REDSTONE_BLOCK"
+      DURABILITY: 0
+      SLOT: 4
+      LORE:
+        - ""
+        - "&7No parties are currently available."
+        - "&7When someone creates one it will appear here."
+  SETTINGS-MENU:
+    TITLE: "&7Party Settings"
+    DUEL-REQUESTS:
+      NAME: "&e&lDuel Requests"
+      MATERIAL: "DIAMOND_SWORD"
+      DURABILITY: 0
+      SLOT: 10
+      ENABLED-LORE:
+        - "&7Would you like to receive duel"
+        - "&7from other parties?"
+        - ""
+        - "&a■ &fEnabled"
+        - "&7■ &fDisabled"
+        - " "
+        - "&fClick to disable."
+      DISABLED-LORE:
+        - "&7Would you like to receive duel"
+        - "&7from other parties?"
+        - ""
+        - "&7■ &fEnabled"
+        - "&a■ &fDisabled"
+        - " "
+        - "&fClick to enable."
+    PING-FACTOR:
+      NAME: "&e&lPing Range"
+      MATERIAL: "LEVER"
+      DURABILITY: 0
+      SLOT: 11
+      LORE:
+        - "&7Would you like to enable ping difference limit"
+        - "&7between the party members you queue with?"
+        - ""
+        - "&a■ &f<ping_fact_amount>"
+        - " "
+        - "&fClick to change."
+      NO-PERMISSION-LORE:
+        - "&7Would you like to enable ping difference limit"
+        - "&7between the players you queue with?"
+        - ""
+        - "&a■ &fUnrestricted"
+        - " "
+        - "&aNo permission."
+    PARTY-LIMIT:
+      NAME: "&e&lParty Limit"
+      MATERIAL: "BOOK_AND_QUILL"
+      DURABILITY: 0
+      SLOT: 12
+      LORE:
+        - "&7How many players would you like"
+        - "&7to be able to join your party?"
+        - ""
+        - "&a■ &f<party_limit_amount>"
+        - " "
+        - "&fClick to change."
+      NO-PERMISSION-LORE:
+        - "&7How many players would you like"
+        - "&7to be able to join your party?"
+        - ""
+        - "&a■ &f<party_limit_amount>"
+        - " "
+        - "&aNo permission."
+    MUTE-CHAT:
+      NAME: "&e&lMute Chat"
+      MATERIAL: "NOTE_BLOCK"
+      DURABILITY: 0
+      SLOT: 13
+      LORE:
+        - "&7Would you like party members to be"
+        - "&7able to talk in party chat?"
+        - ""
+        - "&a■ &fEnabled"
+        - "&7■ &fDisabled"
+        - " "
+        - "&fClick to change."
+      DISABLED-LORE:
+        - "&7Would you like party members to be"
+        - "&7able to talk in party chat?"
+        - ""
+        - "&7■ &fEnabled"
+        - "&a■ &fDisabled"
+        - " "
+        - "&fClick to change."
+    ALL-INVITE:
+      NAME: "&e&lParty All-Invite"
+      MATERIAL: "NAME_TAG"
+      DURABILITY: 0
+      SLOT: 14
+      LORE:
+        - "&7Would you like party members to be able"
+        - "&7to invite other players to your party?"
+        - ""
+        - "&a■ &fEnabled"
+        - "&7■ &fDisabled"
+        - " "
+        - "&fClick to change."
+      DISABLED-LORE:
+        - "&7Would you like party members to be able"
+        - "&7to invite other players to your party?"
+        - ""
+        - "&7■ &fEnabled"
+        - "&a■ &fDisabled"
+        - " "
+        - "&fClick to change."
+    PARTY-PUBLIC:
+      NAME: "&e&lParty Public"
+      MATERIAL: "NETHER_STAR"
+      DURABILITY: 0
+      SLOT: 15
+      LORE:
+        - "&7Would you like players to be able to"
+        - "&7join your party uninvited?"
+        - ""
+        - "&a■ &fEnabled"
+        - "&7■ &fDisabled"
+        - " "
+        - "&fClick to change."
+      DISABLED-LORE:
+        - "&7Would you like players to be able to"
+        - "&7join your party uninvited?"
+        - ""
+        - "&7■ &fEnabled"
+        - "&a■ &fDisabled"
+        - " "
+        - "&fClick to change."
+      NO-PERMISSION-LORE:
+        - "&7Would you like players to be able to"
+        - "&7join your party uninvited?"
+        - ""
+        - "&7■ &fEnabled"
+        - "&7■ &fDisabled"
+        - " "
+        - "&aNo permission."
+    PARTY-MANAGE:
+      NAME: "&e&lParty Manage"
+      MATERIAL: "PLAYER_HEAD"
+      DURABILITY: 0
+      SLOT: 16
+      LORE:
+        - "&7Would you like to manage the"
+        - "&7current party members?"
+        - ""
+        - "&eClick to manage!"
+  PARTY-MANAGE:
+    TITLE: "&e&lParty Manage"
+    BUTTON:
+      NAME: "&a<player>"
+      MATERIAL: "PLAYER_HEAD"
+      DURABILITY: 0
+      LORE:
+        - ""
+        - "&fLeft-Click to kick this player."
+        - "&fRight click to promote to leader."
+BOT-PRESET-MENU:
+  TITLE: "&7Select a Bot Preset"
+  SIZE: 36
+  PRESET-BUTTON:
+    NAME: "<display_name>"
+    LORE:
+      - "&7"
+      - " &a&lDifficulty"
+      - "&a  • &fCPS: &a<cps>"
+      - "&a  • &f&lRange: &a<range>"
+      - "&a  • &f&lPing &a<ping>ms"
+      - ""
+      - " &a&lTraits"
+      - "&a  • &fTry-hard: &a<tryhard>"
+      - "&a  • &fStrafe: &a<strafe>"
+      - "&a  • &fW-Tap: &a<wtap>"
+      - "&a  • &fBlockHit: &a<blockhit>"
+      - "&a  • &fSide Pearl: &a<sidepearl> &7(Requires Try-hard)"
+      - ""
+      - " &eClick to select &r<display_name>&e."
+      - "&7"
+  CUSTOM-PRESET:
+    NAME: "&a&lCustom Preset"
+    MATERIAL: "NETHER_STAR"
+    DURABILITY: 0
+    SLOT: 31
+    LORE:
+      - ""
+      - "&7Make a custom preset and change"
+      - "&7all preset settings yourself to"
+      - "&7have a completely unique experience."
+      - ""
+      - "&eLeft-Click to use custom preset."
+      - "&eRight-Click to edit custom preset."
+    NO-PERM-LORE:
+      - ""
+      - "&7Make a custom preset and change"
+      - "&7all preset settings yourself to"
+      - "&7have a completely unique experience."
+      - ""
+      - "&aYou don't have permission to use this!"
+KIT-MENUS:
+  KIT-EDITOR:
+    TITLE: "&7Editing <inventory_custom_name>"
+    CANCEL-BUTTON:
+      NAME: "&aCancel"
+      MATERIAL: "REDSTONE"
+      DURABILITY: 0
+      LORE:
+        - ""
+        - " &7Click this to abort editing your kit,"
+        - " &7and return to the kit menu."
+        - ""
+        - " &a[Click to cancel]"
+    CLEAR-INVENTORY-BUTTON:
+      NAME: "&aClear Inventory"
+      MATERIAL: "RED_DYE"
+      DURABILITY: 0
+      LORE:
+        - ""
+        - " &7This will clear your inventory"
+        - " &7so you can start over."
+        - ""
+        - " &a[Click to clear]"
+    RENAME-BUTTON:
+      NAME: "&aRename"
+      MATERIAL: "NAME_TAG"
+      DURABILITY: 0
+      LORE:
+        - ""
+        - " &7Click here to start a prompt"
+        - " &7in chat to rename this kit."
+        - " &7Type &fCANCEL &7to cancel the prompt."
+        - ""
+        - " &a[Click to rename]"
+    SAVE-BUTTON:
+      NAME: "&aSave"
+      MATERIAL: "LIME_DYE"
+      DURABILITY: 0
+      LORE:
+        - ""
+        - " &7Click here to save all your"
+        - " &7kit inventories to our database."
+        - ""
+        - " &a[Click to save]"
+    LOAD-DEFAULT-BUTTON:
+      NAME: "&aLoad default kit"
+      MATERIAL: "CYAN_DYE"
+      DURABILITY: 0
+      LORE:
+        - ""
+        - " &7Click this to load the default kit"
+        - " &7into the kit editing menu."
+        - ""
+        - " &a[Click to reset]"
+    EFFECTS-BUTTON:
+      NAME: "&aPotion Effects"
+      MATERIAL: "BREWING_STAND"
+      DURABILITY: 0
+      EFFECTS-FORMAT: " &a• &f<effect_name> &7(<effect_duration>)"
+      EFFECTS-LORE:
+        - ""
+        - "<effects>"
+        - ""
+        - "&eThese are automatically applied."
+      NO-EFFECTS-LORE:
+        - ""
+        - "&7No potion effects."
+  KIT-EDIT-MANAGE:
+    TITLE: "&aViewing <kit_name> kits"
+    CREATE-BUTTON:
+      NAME: "&aCreate an Inventory"
+      MATERIAL: "BOOK"
+      DURABILITY: 0
+      LORE: []
+    DELETE-BUTTON:
+      NAME: "&a&lDelete"
+      MATERIAL: "REDSTONE_BLOCK"
+      DURABILITY: 0
+      LORE:
+        - ""
+        - " &7Click here to delete this kit"
+        - " &7You will &fNOT &7be able to"
+        - " &7recover this inventory."
+        - ""
+        - " &a[Click to delete]"
+    EDIT-BUTTON:
+      NAME: "&a&lEdit <kit_name> #<inventory_slot>"
+      MATERIAL: "ENCHANTED_BOOK"
+      DURABILITY: 0
+      LORE:
+        - ""
+        - " &eName: &f<custom_name>"
+        - " &aHeals: &f<heal_count>"
+        - " &aDebuffs: &f<debuff_count>"
+        - ""
+        - " &a[Click to edit]"
+STATS-MENU:
+  PLAYER-STATS:
+    TITLE: "<player_name>'s Statistics"
+    GLOBAL-NAME: "&a&lGlobal Statistics"
+    GLOBAL-MATERIAL: "NETHER_STAR"
+    GLOBAL-DURABILITY: 0
+    GLOBAL-LORE:
+      - ""
+      - " &fELO: &a<globalElo>"
+      - " &fDivision: &a<division>"
+      - " &fWins: &a<wins>"
+      - " &fKills: &a<kills>"
+      - " &fLosses: &a<losses>"
+      - " &fDeaths: &a<deaths>"
+      - " &fW/L Ratio: &a<wlr>"
+      - " &fK/D Ratio: &a<kdr>"
+      - " &fTournament Wins: &a<tournament_wins>"
+    KIT-NAME: "&a&l<kit>"
+    KIT-UNRANKED-LORE:
+      - ""
+      - "&a&lUnranked"
+      - " &fWins: &a<unrankedWins>"
+      - " &fLosses: &a<unrankedLosses>"
+      - " &fWinstreak: &a<unrankedWinstreak> &7(<highestUnrankedWinstreak>)"
+      - " &fW/L Ratio: &a<unrankedWLRatio>"
+      - " &fTournament Wins: &a<tournament_wins>"
+    KIT-RANKED-LORE:
+      - ""
+      - "&a&lRanked"
+      - " &fELO: &a<elo> &8- &f<division>"
+      - " &fWins: &a<rankedWins>"
+      - " &fLosses: &a<rankedLosses>"
+      - " &fWinstreak: &a<rankedWinstreak> &7(<highestRankedWinstreak>)"
+      - " &fW/L Ratio: &a<rankedWLRatio>"
+      - ""
+      - "&a&lUnranked"
+      - " &fWins: &a<unrankedWins>"
+      - " &fLosses: &a<unrankedLosses>"
+      - " &fWinstreak: &a<unrankedWinstreak> &7(<highestUnrankedWinstreak>)"
+      - " &fW/L Ratio: &a<unrankedWLRatio>"
+      - " &fTournament Wins: &a<tournament_wins>"
+  STATS-BUTTON:
+    NAME: "&a<player>'s Stats"
+    MATERIAL: "PLAYER_HEAD"
+    DURABILITY: 0
+    LORE:
+      - ""
+      - "&7Click to view your stats."
+LEADERBOARDS-MENU:
+  RANKED-TITLE: "Ranked Leaderboards"
+  WIN-STREAK-TITLE: "Win-Streak Leaderboard"
+  KILLS-TITLE: "Kills Leaderboard"
+  WINS-TITLE: "Wins Leaderboard"
+  GLOBAL-LEADERBOARD:
+    NAME: "&a&lGlobal &7┃ &fTop 10"
+    MATERIAL: "NETHER_STAR"
+    DURABILITY: 0
+    LORE:
+      - "&7Showing top 10 results."
+      - ""
+      - "<c>&a#1 &f<player1> &7- &a<value1> &7- <division1>"
+      - "<c>&a#2 &f<player2> &7- &a<value2> &7- <division2>"
+      - "<c>&a#3 &f<player3> &7- &a<value3> &7- <division3>"
+      - "<c>&a#4 &f<player4> &7- &a<value4> &7- <division4>"
+      - "<c>&a#5 &f<player5> &7- &a<value5> &7- <division5>"
+      - "<c>&a#6 &f<player6> &7- &a<value6> &7- <division6>"
+      - "<c>&a#7 &f<player7> &7- &a<value7> &7- <division7>"
+      - "<c>&a#8 &f<player8> &7- &a<value8> &7- <division8>"
+      - "<c>&a#9 &f<player9> &7- &a<value9> &7- <division9>"
+      - "<c>&a#10 &f<player10> &7- &a<value10> &7- <division10>"
+      - ""
+      - "<bottom_notice>"
+  STATS-BUTTON:
+    SLOT: 49
+  KIT-LEADERBOARD:
+    NAME: "&a&l<kit> &7┃ &fTop 10"
+    LORE:
+      - "&7Showing top 10 results."
+      - ""
+      - "<c>&a#1 &f<player1> &7- &a<value1> &7- <division1>"
+      - "<c>&a#2 &f<player2> &7- &a<value2> &7- <division2>"
+      - "<c>&a#3 &f<player3> &7- &a<value3> &7- <division3>"
+      - "<c>&a#4 &f<player4> &7- &a<value4> &7- <division4>"
+      - "<c>&a#5 &f<player5> &7- &a<value5> &7- <division5>"
+      - "<c>&a#6 &f<player6> &7- &a<value6> &7- <division6>"
+      - "<c>&a#7 &f<player7> &7- &a<value7> &7- <division7>"
+      - "<c>&a#8 &f<player8> &7- &a<value8> &7- <division8>"
+      - "<c>&a#9 &f<player9> &7- &a<value9> &7- <division9>"
+      - "<c>&a#10 &f<player10> &7- &a<value10> &7- <division10>"
+      - ""
+      - "<bottom_notice>"
+  ELO-LORE-NOTICE: "&fYou have a total of &a<elo>&f elo."
+  KILLS-LORE-NOTICE: "&fYou have a total of &a<kills>&f kills&7."
+  WIN-STREAK-LORE-NOTICE: "&fYou have a total of &a<winstreak>&f winstreak.\n&fYour\
+    \ highest winstreak was &a<highest_winstreak>&7."
+  WIN-LORE-NOTICE: "&fYou have a total of &a<wins>&f wins&7."
+  KILLS-LEADERBOARDS:
+    SLOT: 53
+    SELECTED:
+      NAME: "&aKills Leaderboards"
+      MATERIAL: "LIME_DYE"
+      DURABILITY: 0
+      LORE:
+        - ""
+        - "&7You're currently viewing kills leaderboards."
+    UNSELECTED:
+      NAME: "&aKills Leaderboards"
+      MATERIAL: "GRAY_DYE"
+      DURABILITY: 0
+      LORE:
+        - ""
+        - "&7Click to view kills leaderboards."
+  RANKED-LEADERBOARDS:
+    SLOT: 45
+    SELECTED:
+      NAME: "&aRanked Leaderboards"
+      MATERIAL: "LIME_DYE"
+      DURABILITY: 0
+      LORE:
+        - ""
+        - "&7You're currently viewing ranked leaderboards."
+    UNSELECTED:
+      NAME: "&aRanked Leaderboards"
+      MATERIAL: "GRAY_DYE"
+      DURABILITY: 0
+      LORE:
+        - ""
+        - "&7Click to view ranked leaderboards."
+  WINSTREAK-LEADERBOARDS:
+    SLOT: 51
+    SELECTED:
+      NAME: "&aWin Streak Leaderboards"
+      MATERIAL: "LIME_DYE"
+      DURABILITY: 0
+      LORE:
+        - ""
+        - "&7You're currently viewing win streak leaderboards."
+    UNSELECTED:
+      NAME: "&aWin Streak Leaderboards"
+      MATERIAL: "GRAY_DYE"
+      DURABILITY: 0
+      LORE:
+        - ""
+        - "&7Click to view win streak leaderboards."
+  WINS-LEADERBOARDS:
+    SLOT: 47
+    SELECTED:
+      NAME: "&aWins Leaderboards"
+      MATERIAL: "LIME_DYE"
+      DURABILITY: 0
+      LORE:
+        - ""
+        - "&7You're currently viewing wins leaderboards."
+    UNSELECTED:
+      NAME: "&aWins Leaderboards"
+      MATERIAL: "GRAY_DYE"
+      DURABILITY: 0
+      LORE:
+        - ""
+        - "&7Click to view wins leaderboards."
+SELECTION-MENUS:
+  ARENA-SELECT:
+    TITLE: "&7Select an Arena"
+    SIZE: -1
+    NAME: "<arena_display_name>"
+    LORE:
+      - ""
+      - "&eClick to select."
+    RANDOM-BUTTON:
+      ENABLED: true
+      NAME: "&eRandom Arena"
+      MATERIAL: "ENDER_EYE"
+      DURABILITY: 0
+      SLOT: 49
+      LORE:
+        - ""
+        - "&eClick to select a Random Arena."
+  KIT-SELECT:
+    TITLE: "&7Select an Kit"
+    SIZE: -1
+    NAME: "<kit_display_name>"
+    LORE:
+      - ""
+      - "&eClick to select."
+    RANDOM-BUTTON:
+      ENABLED: true
+      NAME: "&eRandom Kit"
+      MATERIAL: "ENDER_EYE"
+      DURABILITY: 0
+      SLOT: 49
+      LORE:
+        - ""
+        - "&eClick to select a Random Kit."

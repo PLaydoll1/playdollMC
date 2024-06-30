@@ -1,0 +1,221 @@
+# This is the configuration file for the PvP-Bots of Bolt. There's a lot of things to configure along
+# with the knockback profiles specifically made for the bots. The default config contains four bot presets
+# that have pre-defined combat settings which will be perfectly fine if you use them as is. As always if you
+# need any help, feel free to contact customer support at https://dsc.gg/refine
+# null
+
+BOT-SETTINGS:
+  
+  # Should the bots be enabled at all?
+  ENABLED: true
+  
+  # This essentially makes the bot w-tap before potting. Use this if your potion settings in spigot
+  # are configured to have fast-potions and only work when they w-tap, otherwise bot will keep potting and not fight.
+  FAST-POTS: false
+  
+  # Use an alternative tick factor which makes the hit delay a bit higher than the normal one.
+  # This may or may not improve knockback and over experience of bot pvp depending on knockback settings.
+  ALTERNATE-HIT-FACTOR: false
+  
+  # Should we reduce the bot's attack range when it's getting comboed for more smoother combos.
+  REDUCE-RANGE-ON-COMBO: true
+  
+  # This will disable bolt's bot knockback system and use spigot's knockback system instead.
+  # It is recommended to only enable this if you know the spigot will support Citizens NPC knockback.
+  # If the spigot uses a kohi-based knockback system or mSpigot based knockback system, then it's likely it will.
+  SPIGOT-BASED-KB: false
+  
+  # This is the movement speed for normal non-tryhard bots.
+  NORMAL-MOVEMENT-SPEED: 1.0
+  
+  # This is the movement speed for tryhard bots.
+  TRY-HARD-MOVEMENT-SPEED: 1.15
+  
+  # This is the movement speed for that is applied when bot has a speed potion effect.
+  SPEED-EFFECT-MOVEMENT-SPEED: 1.29
+  
+  # Bot modes are essentially pre-determined logic related to the kit for the bot.
+  # For example, Speed PvP mode would be catering to Speed kits like NoDebuff, Debuff etc.
+  # Meanwhile, UHC mode would be catering to BuildUHC or SG type of kits. (Keep in mind, Bot cannot build right now)
+  MODES:
+    # This is the default bot-mode, which has no logic pre-determined.
+    # Kits like Sumo which do not have any logic except just knocking the player off the platform are applicable here.
+    DEFAULT:
+      KITS:
+        - "Sumo"
+    SPEED-PVP:
+      # Do you want to enable the Speed PvP bot mode?
+      ENABLED: true
+      
+      # Configure what kits do you want assigned to this bot mode.
+      KITS:
+        - "NoDebuff"
+        - "Debuff"
+    GOLDEN-APPLE:
+      # Do you want to enable the Golden Apple bot mode?
+      ENABLED: true
+      
+      # Configure what kits do you want assigned to this bot mode.
+      KITS:
+        - "Gapple"
+        - "Combo"
+    UHC:
+      # Do you want to enable the UHC bot mode?
+      ENABLED: true
+      
+      # Configure what kits do you want assigned to this bot mode.
+      KITS:
+        - "BuildUHC"
+        - "FinalUHC"
+        - "SG"
+    SOUP:
+      # Do you want to enable the Soup bot mode?
+      ENABLED: true
+      
+      # Configure what kits do you want assigned to this bot mode.
+      KITS:
+        - "Soup"
+
+# Bolt randomly picks a name from this list, although if you want to enforce only one name
+# then just put one single name here. Note that putting any color codes here won't work, that's in the Bot-Prefix
+BOT-NAMES:
+  - "Marcel"
+  - "Jewdah"
+  - "Defused"
+  - "OhEmilyyy"
+  - "Amaan"
+  - "Zefew"
+  - "Miami"
+  - "ByRez"
+  - "Tryhard"
+  - "PotFast"
+  - "LigmaSpark"
+  - "Brewage"
+  - "Bl4stymineman"
+  - "sbeenz"
+  - "Clare"
+  - "kayalust"
+  - "ZIBLACKINGGG"
+  - "Staind"
+  - "Dowze"
+  - "SumTing"
+  - "gopu"
+  - "Scholar"
+  - "idiol"
+  - "CL0CK"
+  - "flaxeneel2"
+  - "Zeynah"
+  - "Adviser"
+  - "Dreamer_420"
+  - "Rases"
+  - "AYEAR"
+  - "Labdy"
+  - "Mnyue"
+  - "VolcrzR"
+  - "Dubai"
+  - "Eloies"
+  - "Vers"
+  - "Hydrize"
+  - "P0kemon"
+  - "bcz"
+  - "IIDK"
+  - "yungsaphars"
+  - "Swampie"
+  - "ODxRay"
+  - "Posed"
+  - "Slexi"
+  - "Zylowh"
+  - "Elb1to"
+  - "Zyphing"
+  - "DANTEH"
+  - "Topu"
+  - "Futi"
+  - "Glory"
+  - "Reboting"
+  - "Tylarzz"
+  - "kayalust"
+  - "Suchspeed"
+  - "Tediosuy"
+  - "Huahwi"
+  - "NotDrizzy"
+  - "Creaxx"
+BOT-PROFILES: {}
+
+# Here you can add/change bot presets, these are built-in configured settings of the bot.
+# These settings directly affect the pvp experience and its difficulty.
+BOT-PRESETS:
+  easy:
+    DISPLAY-NAME: '&aEasy'
+    SLOT: 11
+    MATERIAL: WOOL
+    DURABILITY: 0
+    DESCRIPTION: []
+    SETTINGS:
+      RANGE: 1.5
+      CPS: 3
+      PING: 0
+      TRY-HARD: false
+      W-TAP: false
+      STRAFE: false
+      BLOCK-HIT: false
+      SIDE-PEARL: false
+  medium:
+    DISPLAY-NAME: '&eMedium'
+    SLOT: 12
+    MATERIAL: WOOL
+    DURABILITY: 0
+    DESCRIPTION: []
+    SETTINGS:
+      RANGE: 2.0
+      CPS: 5
+      PING: 0
+      TRY-HARD: false
+      W-TAP: true
+      STRAFE: false
+      BLOCK-HIT: true
+      SIDE-PEARL: false
+  hard:
+    DISPLAY-NAME: '&6Hard'
+    SLOT: 13
+    MATERIAL: WOOL
+    DURABILITY: 0
+    DESCRIPTION: []
+    SETTINGS:
+      RANGE: 2.5
+      CPS: 10
+      PING: 0
+      TRY-HARD: true
+      W-TAP: true
+      STRAFE: false
+      BLOCK-HIT: true
+      SIDE-PEARL: true
+  expert:
+    DISPLAY-NAME: '&cExpert'
+    SLOT: 14
+    MATERIAL: WOOL
+    DURABILITY: 0
+    DESCRIPTION: []
+    SETTINGS:
+      RANGE: 3.0
+      CPS: 15
+      PING: 0
+      TRY-HARD: true
+      W-TAP: true
+      STRAFE: true
+      BLOCK-HIT: true
+      SIDE-PEARL: true
+  hacker:
+    DISPLAY-NAME: '&5Hacker'
+    SLOT: 15
+    MATERIAL: WOOL
+    DURABILITY: 0
+    DESCRIPTION: []
+    SETTINGS:
+      RANGE: 3.5
+      CPS: 20
+      PING: 0
+      TRY-HARD: true
+      W-TAP: true
+      STRAFE: true
+      BLOCK-HIT: true
+      SIDE-PEARL: true

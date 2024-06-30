@@ -1,0 +1,109 @@
+groups:
+  User:
+    permissions:
+    - nte.user
+    - custom.help.use
+    - essentials.motd
+    - void2spawn.tp
+    options:
+      prefix: '&e'
+      default: true
+  GALAXY:
+    permissions:
+    - basicstaff.fly
+    - nte.galaxy
+    - essentials.motd
+    - void2spawn.tp
+    options:
+      prefix: '&a&lGALAXY &e'
+      default: false
+  PREMIUM:
+    permissions:
+    - basicstaff.fly
+    - nte.premium
+    - custom.help.use
+    - essentials.motd
+    - void2spawn.tp
+    options:
+      prefix: '&b&lPREMIUM &e'
+      default: false
+  YOUTUBER:
+    permissions:
+    - nte.youtuber
+    - basicstaff.fly
+    - custom.help.use
+    - essentials.motd
+    - void2spawn.tp
+    options:
+      prefix: '&c&lYOUTUBER &e'
+      default: false
+  ADM:
+    permissions:
+    - basicstaff.fly
+    - basicstaff.vanish
+    - basicstaff.tp
+    - basicstaff.tp.others
+    - basicstaff.tp.coordinates
+    - nte.adm
+    - custom.help.use
+    - essentials.motd
+    - void2spawn.tp
+    options:
+      prefix: '&c&lADMIN &e'
+      default: false
+  OWNER:
+    permissions:
+    - basicstaff.fly
+    - basicstaff.vanish
+    - basicstaff.tp
+    - basicstaff.tp.others
+    - basicstaff.tp.coordinates
+    - nte.owner
+    - custom.help.use
+    - essentials.motd
+    - void2spawn.tp
+    options:
+      prefix: "&4&lOWNER &e"
+      default: false
+  MOD:
+    permissions:
+    - basicstaff.fly
+    - basicstaff.vanish
+    - basicstaff.tp
+    - basicstaff.tp.others
+    - basicstaff.tp.coordinates
+    - nte.mod
+    - custom.help.use
+    - void2spawn.tp
+    - essentials.motd
+    options:
+      prefix: '&6&lMOD &e'
+      default: false
+  DEV:
+    permissions:
+    - basicstaff.fly
+    - basicstaff.vanish
+    - basicstaff.tp
+    - basicstaff.tp.others
+    - basicstaff.tp.coordinates
+    - nte.dev
+    - custom.help.use
+    - void2spawn.tp
+    options:
+      prefix: '&9&lDEV &e'
+      default: false
+  HELPER:
+    permissions:
+    - basicstaff.fly
+    - basicstaff.vanish
+    - basicstaff.tp
+    - basicstaff.tp.others
+    - basicstaff.tp.coordinates
+    - nte.helper
+    - custom.help.use
+    - void2spawn.tp
+    options:
+      prefix: '&3&lHELPER &e'
+      default: false
+schema-version: 1
+users:

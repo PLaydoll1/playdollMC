@@ -1,0 +1,3 @@
+SETTINGS:
+  # You can set the version here, old version supported is '2.3.6' OR you can put 'autoupdate'
+  VERSION: "AUTOUPDATE"

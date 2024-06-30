@@ -1,0 +1,71 @@
+knockbackHorizontal: 0.6
+knockbackVerticalRaw: 0.69
+knockbackVertical: 0.36
+knockbackSprintHorizontal: 1.329
+knockbackSprintVertical: 1.0
+
+groundHorizontalMultiplier: 1.0
+groundVerticalMultiplier: 1.0
+
+#DOESNT WORK AS OF NOW dont experiment with it
+frictionHorizontal: 1.0
+frictionVertical: 1.0
+
+
+speedHorizontal: 0.685
+speedVert: 0.36
+speedSprintMultiplier: 1.28
+speedGroundHorMultiplier: 1.0
+
+#yesworks
+autoWTap: true
+#delay till autowtap in ticks after a hit
+wtapdelay: 1
+
+OverrideMaxNoDamageTicks: false
+DamageTicks: 20
+
+knockbackEnchantincreaseConstant: 1.0
+
+straightBowBoost: true
+bowboostHorizontal: 0.9055
+bowboostVertical: 0.44
+BowBoostAirVertMultiplier: 0.8
+BowBoostAirHorMultiplier: 1.0
+#this value is directly proportional to punch kb, set to 0 to disable any extra kb from punch
+PunchEnchantIncreaseConstant: 1.25
+
+PotionThrowSpeedMultiplier: 1.1
+potoffsetY: -0.5
+potoffsetX: 0.2
+
+combo:
+  MaxNoDamageTicks: 10
+  horizontal: 0.25
+  vertical: 0.385
+  v-limit: 0.24
+  maxComboHeight: 1.5
+
+snowball:
+  override: true
+  horizontal: 0.7
+  vertical: 0.36
+egg:
+  override: true
+  horizontal: 0.7
+  vertical: 0.36
+#uses punch enchant increase constant
+arrow:
+  override: true
+  horizontal: 0.7
+  vertical: 0.36
+pearl:
+  speedMultipler: 2.0
+  override: true
+  horizontal: 0.7
+  vertical: 0.36
+rod:
+  speedMultipler: 1.5
+  override: true
+  horizontal: 0.7
+  vertical: 0.36

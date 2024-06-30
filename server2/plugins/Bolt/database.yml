@@ -1,0 +1,19 @@
+# This configuration file is part of a Refine Development Project. Purchased at https://dsc.gg/refine
+
+CrazySquad:
+  Link: https://t.me/Cr4zySQ
+MONGO:
+  URI-MODE: true
+  # Only enable if the username or password contains a colon (:) or an at-sign (@)
+  URL-ENCODE: false
+  NORMAL:
+    HOST: 127.0.0.1
+    PORT: 27017
+    DATABASE: Bolt
+    AUTHENTICATION:
+      ENABLED: false
+      USERNAME: ''
+      PASSWORD: ''
+  URI:
+    DATABASE: botdwkjcgv5yvhro34nx
+    CONNECTION-STRING: mongodb://ubzk7xbzgdhttx4u0gq4:VD3AYvmktb1PqhGNwBd@botdwkjcgv5yvhro34nx-mongodb.services.clever-cloud.com:2399/botdwkjcgv5yvhro34nx
