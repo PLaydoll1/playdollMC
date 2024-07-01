@@ -1,5 +1,0 @@
-prefix: '&c&l(!) &7'
-loadingLang: '&7Estamos cargando el idioma de tu minecraft...'
-loadedLang: '&7Tu idioma es &8| &a{0}'
-invalidLang: '&7Lenguaje inválido!'
-reloaded: '&7La configuracion ha sido re-cargada correctamente!'
